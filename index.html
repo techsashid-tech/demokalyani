@@ -1,0 +1,2721 @@
+<!DOCTYPE html>
+<html lang="en" class="dark scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kalyani Charitable Trust | Creating Hope, Opportunity & Positive Change</title>
+  <meta name="description" content="Kalyani Charitable Trust is a dedicated non-profit organization serving communities through education, healthcare, child welfare, women empowerment, and disaster relief in Cuttack, Odisha." />
+  <meta name="keywords" content="Kalyani Charitable Trust, NGO Cuttack, NGO Odisha, Charity, Education, Healthcare, Women Empowerment, Community Care" />
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://kalyanitrust.org/" />
+  <meta property="og:title" content="Kalyani Charitable Trust | Creating Hope, Opportunity & Positive Change" />
+  <meta property="og:description" content="Dedicated to transforming lives through compassion into action. Support our grassroots initiatives in education, health, and dignity." />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=1200&auto=format&fit=crop" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:title" content="Kalyani Charitable Trust | Creating Hope, Opportunity & Positive Change" />
+  <meta property="twitter:description" content="Dedicated to transforming lives through compassion into action in Odisha." />
+  <meta property="twitter:image" content="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=1200&auto=format&fit=crop" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Outfit:wght@400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Tailwind CSS CDN with configuration -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            display: ['Outfit', 'sans-serif'],
+            serif: ['"Playfair Display"', 'serif'],
+          },
+          colors: {
+            midnight: {
+              950: '#070a0f',
+              900: '#0d131d',
+              800: '#141d2c',
+              700: '#1e2c42',
+              600: '#2a3d5b',
+            },
+            ivory: {
+              50: '#faf8f5',
+              100: '#f5f1eb',
+              200: '#ebe4d8',
+              300: '#dfd4c1',
+              800: '#4a4237',
+              900: '#2a251e',
+            },
+            gold: {
+              300: '#f6e05e',
+              400: '#ecc94b',
+              500: '#d69e2e',
+              600: '#b7791f',
+            },
+            emeraldAccent: {
+              400: '#34d399',
+              500: '#10b981',
+              600: '#059669',
+              700: '#047857',
+            }
+          },
+          animation: {
+            'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+            'float': 'float 6s ease-in-out infinite',
+            'float-slow': 'float 9s ease-in-out infinite',
+            'spin-slow': 'spin 20s linear infinite',
+          },
+          keyframes: {
+            float: {
+              '0%, 100%': { transform: 'translateY(0px)' },
+              '50%': { transform: 'translateY(-12px)' },
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Structured Schema Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "NGO",
+    "name": "Kalyani Charitable Trust",
+    "description": "Non-profit organization dedicated to community healthcare, education, child welfare, women empowerment, and disaster relief.",
+    "telephone": "+918277754614",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Kalyani Nagar, Rajendra Nagar",
+      "addressLocality": "Cuttack",
+      "addressRegion": "Odisha",
+      "postalCode": "753013",
+      "addressCountry": "IN"
+    },
+    "url": "https://www.google.com/maps/place/Kalyani+Charitable+Trust/@20.4514953,85.9005872,17z/"
+  }
+  </script>
+
+  <style>
+    /* Custom CSS & 3D styling */
+    :root {
+      --primary-glow: rgba(16, 185, 129, 0.25);
+      --gold-glow: rgba(214, 158, 46, 0.2);
+    }
+    
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      overflow-x: hidden;
+      transition: background-color 0.4s ease, color 0.4s ease;
+    }
+
+    /* Signature Light Pass Beam */
+    .light-sweep-container {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .light-sweep-container::after {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -60%;
+      width: 40%;
+      height: 200%;
+      background: linear-gradient(
+        60deg, 
+        rgba(255, 255, 255, 0) 0%, 
+        rgba(255, 255, 255, 0.12) 50%, 
+        rgba(255, 255, 255, 0) 100%
+      );
+      transform: rotate(25deg);
+      pointer-events: none;
+      animation: periodicLightPass 8s ease-in-out infinite;
+    }
+
+    @keyframes periodicLightPass {
+      0% { left: -80%; opacity: 0; }
+      15% { opacity: 1; }
+      30% { left: 160%; opacity: 0; }
+      100% { left: 160%; opacity: 0; }
+    }
+
+    /* Glassmorphism Styles */
+    .glass-dark {
+      background: rgba(13, 19, 29, 0.72);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      box-shadow: 0 16px 36px 0 rgba(0, 0, 0, 0.35);
+    }
+
+    .glass-light {
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(223, 212, 193, 0.5);
+      box-shadow: 0 16px 36px 0 rgba(140, 120, 90, 0.08);
+    }
+
+    .glass-card {
+      transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+      transform-style: preserve-3d;
+    }
+
+    .glass-card:hover {
+      transform: translateY(-6px) scale(1.01);
+      border-color: rgba(16, 185, 129, 0.35);
+      box-shadow: 0 24px 44px -8px rgba(16, 185, 129, 0.15);
+    }
+
+    /* 3D Button Micro-interactions */
+    .btn-3d {
+      position: relative;
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+      transform-style: preserve-3d;
+      box-shadow: 0 6px 0 rgba(0,0,0,0.25), 0 10px 20px rgba(0,0,0,0.2);
+    }
+
+    .btn-3d:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 0 rgba(0,0,0,0.25), 0 15px 25px rgba(0,0,0,0.3);
+    }
+
+    .btn-3d:active {
+      transform: translateY(3px);
+      box-shadow: 0 2px 0 rgba(0,0,0,0.25), 0 5px 10px rgba(0,0,0,0.2);
+    }
+
+    /* 3D Cylindrical Gallery Styles */
+    .gallery-viewport {
+      perspective: 1200px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .gallery-carousel {
+      width: 100%;
+      height: 380px;
+      position: relative;
+      transform-style: preserve-3d;
+      transition: transform 0.5s ease-out;
+    }
+
+    .gallery-slide {
+      position: absolute;
+      top: 10px;
+      left: 50%;
+      width: 290px;
+      height: 340px;
+      margin-left: -145px;
+      border-radius: 20px;
+      overflow: hidden;
+      backface-visibility: hidden;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+      transition: filter 0.3s, transform 0.3s;
+      cursor: pointer;
+    }
+
+    /* Reviews Continuous Ticker */
+    @keyframes tickerScroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+
+    .reviews-track {
+      display: flex;
+      width: max-content;
+      animation: tickerScroll 35s linear infinite;
+    }
+
+    .reviews-track:hover {
+      animation-play-state: paused;
+    }
+
+    /* Preloader Animation */
+    #preloader {
+      transition: opacity 0.8s cubic-bezier(0.65, 0, 0.35, 1), visibility 0.8s;
+    }
+
+    #preloader.loaded {
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+    }
+
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #0d131d;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #1e2c42;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #059669;
+    }
+  </style>
+</head>
+<body class="bg-midnight-950 text-slate-100 font-sans antialiased selection:bg-emeraldAccent-500 selection:text-white">
+
+  <!-- ==================== 3D PRELOADER ==================== -->
+  <div id="preloader" class="fixed inset-0 z-[100] flex flex-col items-center justify-center bg-midnight-950 text-white">
+    <div class="relative w-48 h-48 flex items-center justify-center">
+      <!-- Outer Pulsing Rings -->
+      <div class="absolute inset-0 rounded-full border border-emeraldAccent-500/20 animate-ping opacity-75"></div>
+      <div class="absolute inset-2 rounded-full border border-gold-400/20 animate-spin-slow"></div>
+      <div class="absolute inset-6 rounded-full border-t-2 border-emeraldAccent-400 animate-spin"></div>
+      
+      <!-- Central 3D Glowing Emblem -->
+      <div class="relative z-10 w-24 h-24 rounded-2xl bg-gradient-to-tr from-midnight-900 to-midnight-800 border border-emeraldAccent-400/40 shadow-[0_0_50px_rgba(16,185,129,0.35)] flex items-center justify-center transform rotate-3 animate-float">
+        <div class="text-center">
+          <span class="block text-2xl font-black tracking-widest font-display text-transparent bg-clip-text bg-gradient-to-r from-emeraldAccent-400 to-gold-400">KCT</span>
+          <div class="w-8 h-0.5 bg-gradient-to-r from-emeraldAccent-400 to-gold-400 mx-auto mt-1 rounded-full"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Text Emergence -->
+    <div class="mt-8 text-center px-4">
+      <h2 class="text-xl md:text-2xl font-bold tracking-[0.25em] font-display uppercase text-slate-100">
+        Kalyani Charitable Trust
+      </h2>
+      <p class="text-xs uppercase tracking-[0.35em] text-emeraldAccent-400 mt-2 font-medium">
+        Compassion • Trust • Humanity
+      </p>
+      
+      <!-- Elegant Progress Indicator -->
+      <div class="w-56 h-1 bg-midnight-800 rounded-full mx-auto mt-6 overflow-hidden">
+        <div id="preloader-bar" class="h-full bg-gradient-to-r from-emeraldAccent-500 via-gold-400 to-emeraldAccent-400 w-0 transition-all duration-1000 ease-out"></div>
+      </div>
+      <p id="preloader-percent" class="text-xs text-slate-400 mt-2 font-mono">0%</p>
+    </div>
+  </div>
+
+  <!-- Background Canvas for Atmospheric Particles -->
+  <canvas id="ambient-canvas" class="fixed inset-0 pointer-events-none z-0 opacity-40"></canvas>
+
+  <!-- ==================== HEADER & NAVIGATION ==================== -->
+  <header id="main-header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 py-3 md:py-4 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto rounded-2xl glass-dark border border-white/10 dark:border-white/10 transition-colors duration-300">
+      <div class="flex items-center justify-between px-4 sm:px-6 h-16 sm:h-20">
+        
+        <!-- Logo System -->
+        <a href="#home" class="flex items-center gap-3 group focus:outline-none" onclick="playSound('click')">
+          <div class="relative w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-gradient-to-br from-emeraldAccent-500/20 via-midnight-800 to-gold-500/20 border border-emeraldAccent-500/40 flex items-center justify-center shadow-lg shadow-emeraldAccent-500/10 group-hover:scale-105 group-hover:border-emeraldAccent-400 transition-all duration-300 transform group-hover:rotate-2">
+            <span class="font-display font-black text-emeraldAccent-400 text-base sm:text-lg tracking-wider">KCT</span>
+            <div class="absolute -inset-1 rounded-xl bg-emeraldAccent-500/20 blur opacity-0 group-hover:opacity-100 transition duration-300"></div>
+          </div>
+          <div>
+            <span class="block font-display font-extrabold text-base sm:text-lg tracking-tight text-slate-100 dark:text-slate-100 group-hover:text-emeraldAccent-400 transition">
+              Kalyani Charitable Trust
+            </span>
+            <span class="block text-[10px] tracking-widest uppercase text-slate-400 font-medium">
+              Registered NGO • Cuttack
+            </span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links (10 Pages) -->
+        <nav class="hidden xl:flex items-center space-x-1 lg:space-x-1.5 text-xs font-semibold uppercase tracking-wider text-slate-300">
+          <a href="#home" class="px-3 py-2 rounded-lg hover:text-white hover:bg-white/5 transition" onclick="playSound('click')">Home</a>
+          <a href="#about" class="px-3 py-2 rounded-lg hover:text-white hover:bg-white/5 transition" onclick="playSound('click')">About</a>
+          <a href="#programmes" class="px-3 py-2 rounded-lg hover:text-white hover:bg-white/5 transition" onclick="playSound('click')">Programmes</a>
+          <a href="#impact" class="px-3 py-2 rounded-lg hover:text-white hover:bg-white/5 transition" onclick="playSound('click')">Impact</a>
+          <a href="#get-involved" class="px-3 py-2 rounded-lg hover:text-white hover:bg-white/5 transition" onclick="playSound('click')">Get Involved</a>
+          <a href="#donate" class="px-3 py-2 rounded-lg hover:text-white hover:bg-white/5 transition" onclick="playSound('click')">Donate</a>
+          <a href="#stories" class="px-3 py-2 rounded-lg hover:text-white hover:bg-white/5 transition" onclick="playSound('click')">Stories</a>
+          <a href="#gallery" class="px-3 py-2 rounded-lg hover:text-white hover:bg-white/5 transition" onclick="playSound('click')">3D Gallery</a>
+          <a href="#resources" class="px-3 py-2 rounded-lg hover:text-white hover:bg-white/5 transition" onclick="playSound('click')">Resources</a>
+          <a href="#contact" class="px-3 py-2 rounded-lg hover:text-white hover:bg-white/5 transition" onclick="playSound('click')">Contact</a>
+        </nav>
+
+        <!-- Header Actions: Sound, Theme, Donate CTA, Mobile Menu -->
+        <div class="flex items-center space-x-2 sm:space-x-3">
+          
+          <!-- Sound Toggle (Subtle tactile feedback) -->
+          <button id="sound-toggle" aria-label="Toggle UI Sound" class="p-2 sm:p-2.5 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 text-slate-300 hover:text-white transition">
+            <i data-lucide="volume-x" id="sound-icon" class="w-4 h-4"></i>
+          </button>
+
+          <!-- Daylight / Dark Mode Toggle -->
+          <button id="theme-toggle" aria-label="Toggle Theme" class="p-2 sm:p-2.5 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 text-slate-300 hover:text-white transition" onclick="toggleTheme()">
+            <i data-lucide="sun" id="theme-icon" class="w-4 h-4 text-gold-400"></i>
+          </button>
+
+          <!-- Quick Donate CTA -->
+          <a href="#donate" class="hidden sm:inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-gradient-to-r from-emeraldAccent-500 to-emeraldAccent-600 hover:from-emeraldAccent-400 hover:to-emeraldAccent-500 text-white font-bold text-xs uppercase tracking-wider shadow-lg shadow-emeraldAccent-500/25 btn-3d" onclick="playSound('click')">
+            <i data-lucide="heart" class="w-3.5 h-3.5 fill-current"></i>
+            <span>Donate</span>
+          </a>
+
+          <!-- Mobile Hamburger Toggle -->
+          <button id="mobile-menu-btn" aria-label="Open Navigation Menu" class="xl:hidden p-2 sm:p-2.5 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 text-slate-300 hover:text-white transition" onclick="toggleMobileMenu()">
+            <i data-lucide="menu" id="menu-icon" class="w-5 h-5"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Navigation Drawer -->
+      <div id="mobile-menu" class="hidden xl:hidden border-t border-white/10 px-4 py-6 space-y-2">
+        <div class="grid grid-cols-2 gap-2 text-xs font-semibold uppercase tracking-wider">
+          <a href="#home" class="px-3 py-2.5 rounded-lg bg-white/5 hover:bg-emeraldAccent-500/20 text-slate-200" onclick="closeMobileMenu(); playSound('click')">Home</a>
+          <a href="#about" class="px-3 py-2.5 rounded-lg bg-white/5 hover:bg-emeraldAccent-500/20 text-slate-200" onclick="closeMobileMenu(); playSound('click')">About Us</a>
+          <a href="#programmes" class="px-3 py-2.5 rounded-lg bg-white/5 hover:bg-emeraldAccent-500/20 text-slate-200" onclick="closeMobileMenu(); playSound('click')">Programmes</a>
+          <a href="#impact" class="px-3 py-2.5 rounded-lg bg-white/5 hover:bg-emeraldAccent-500/20 text-slate-200" onclick="closeMobileMenu(); playSound('click')">Impact</a>
+          <a href="#get-involved" class="px-3 py-2.5 rounded-lg bg-white/5 hover:bg-emeraldAccent-500/20 text-slate-200" onclick="closeMobileMenu(); playSound('click')">Get Involved</a>
+          <a href="#donate" class="px-3 py-2.5 rounded-lg bg-white/5 hover:bg-emeraldAccent-500/20 text-slate-200" onclick="closeMobileMenu(); playSound('click')">Donate</a>
+          <a href="#stories" class="px-3 py-2.5 rounded-lg bg-white/5 hover:bg-emeraldAccent-500/20 text-slate-200" onclick="closeMobileMenu(); playSound('click')">Stories</a>
+          <a href="#gallery" class="px-3 py-2.5 rounded-lg bg-white/5 hover:bg-emeraldAccent-500/20 text-slate-200" onclick="closeMobileMenu(); playSound('click')">3D Gallery</a>
+          <a href="#resources" class="px-3 py-2.5 rounded-lg bg-white/5 hover:bg-emeraldAccent-500/20 text-slate-200" onclick="closeMobileMenu(); playSound('click')">Resources</a>
+          <a href="#contact" class="px-3 py-2.5 rounded-lg bg-white/5 hover:bg-emeraldAccent-500/20 text-slate-200" onclick="closeMobileMenu(); playSound('click')">Contact</a>
+        </div>
+        <div class="pt-4 flex items-center justify-between gap-3">
+          <a href="tel:+918277754614" class="flex-1 text-center py-2.5 rounded-xl bg-white/10 text-xs font-bold text-slate-200 flex items-center justify-center gap-1.5">
+            <i data-lucide="phone" class="w-3.5 h-3.5 text-emeraldAccent-400"></i> Call Us
+          </a>
+          <a href="https://wa.me/918277754614?text=Hello%20Kalyani%20Charitable%20Trust%2C%20I%20would%20like%20to%20know%20more%20about%20your%20work%20and%20how%20I%20can%20support%20your%20mission." target="_blank" rel="noopener noreferrer" class="flex-1 text-center py-2.5 rounded-xl bg-emeraldAccent-600/80 text-xs font-bold text-white flex items-center justify-center gap-1.5">
+            <i data-lucide="message-circle" class="w-3.5 h-3.5"></i> WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== MAIN CONTENT WRAPPER ==================== -->
+  <main class="relative z-10">
+
+    <!-- ==================== PAGE 01: HERO SECTION ==================== -->
+    <section id="home" class="relative min-h-screen flex items-center justify-center pt-24 pb-16 overflow-hidden">
+      <!-- Fullscreen Cinematic Photography Layer -->
+      <div class="absolute inset-0 z-0">
+        <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=2000&auto=format&fit=crop" alt="Compassion and child welfare in community" class="w-full h-full object-cover object-center scale-105 transition-transform duration-1000 ease-out filter brightness-[0.38] contrast-[1.08]" />
+        <!-- Dark Atmospheric Gradients & Volumetric Vignette -->
+        <div class="absolute inset-0 bg-gradient-to-t from-midnight-950 via-midnight-950/70 to-midnight-950/50"></div>
+        <div class="absolute inset-0 bg-gradient-to-r from-midnight-950 via-transparent to-midnight-950"></div>
+        <!-- Volumetric Soft Ambient Glow Spotlights -->
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-emeraldAccent-500/15 rounded-full blur-[140px] pointer-events-none"></div>
+        <div class="absolute bottom-1/4 right-1/4 w-80 h-80 bg-gold-400/10 rounded-full blur-[120px] pointer-events-none"></div>
+      </div>
+
+      <div class="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-12 sm:pt-16">
+        
+        <!-- NGO Verification Badge with Subtle Light Pass -->
+        <div class="inline-flex items-center gap-2.5 px-4 py-2 rounded-full glass-dark border border-emeraldAccent-400/30 text-emeraldAccent-300 text-xs font-semibold uppercase tracking-widest mb-6 light-sweep-container shadow-xl">
+          <span class="w-2 h-2 rounded-full bg-emeraldAccent-400 animate-ping"></span>
+          <span>Official Trust • Cuttack, Odisha</span>
+          <span class="text-slate-400">|</span>
+          <span class="text-gold-400 font-medium">Non-Profit Organization</span>
+        </div>
+
+        <!-- Main Cinematic Hero Typography -->
+        <h1 class="text-4xl sm:text-6xl md:text-7xl font-extrabold font-display tracking-tight text-white uppercase leading-[1.08] mb-6">
+          <span class="block text-slate-100">Kalyani Charitable Trust</span>
+          <!-- Dynamic 3D Tagline Rotation -->
+          <span id="hero-tagline" class="inline-block mt-2 min-h-[1.3em] text-transparent bg-clip-text bg-gradient-to-r from-emeraldAccent-400 via-teal-200 to-gold-400 font-black transition-all duration-700 ease-in-out transform">
+            TOGETHER, WE CREATE CHANGE.
+          </span>
+        </h1>
+
+        <!-- Emotion-rich Subheading Statement -->
+        <p class="max-w-2xl mx-auto text-base sm:text-lg md:text-xl text-slate-300 leading-relaxed font-normal mb-10">
+          Rooted in empathy, dignity, and collective action. Empowering underprivileged children, supporting rural families, offering healthcare assistance, and bringing opportunity to those who need it most.
+        </p>
+
+        <!-- Hero 3D Glass CTA Buttons -->
+        <div class="flex flex-wrap items-center justify-center gap-4 sm:gap-5 mb-14">
+          <a href="#donate" class="px-7 py-3.5 rounded-xl bg-gradient-to-r from-emeraldAccent-500 to-emeraldAccent-600 hover:from-emeraldAccent-400 hover:to-emeraldAccent-500 text-white font-extrabold text-sm uppercase tracking-wider shadow-xl shadow-emeraldAccent-500/30 btn-3d flex items-center gap-2.5" onclick="playSound('click')">
+            <i data-lucide="heart-handshake" class="w-4 h-4"></i>
+            <span>Donate Now</span>
+          </a>
+          <a href="#get-involved" class="px-7 py-3.5 rounded-xl glass-dark hover:bg-white/15 text-slate-100 font-bold text-sm uppercase tracking-wider border border-white/20 btn-3d flex items-center gap-2.5" onclick="playSound('click')">
+            <i data-lucide="users" class="w-4 h-4 text-emeraldAccent-400"></i>
+            <span>Become a Volunteer</span>
+          </a>
+          <a href="#programmes" class="px-6 py-3.5 rounded-xl bg-white/5 hover:bg-white/10 text-slate-300 hover:text-white font-bold text-sm uppercase tracking-wider border border-white/10 btn-3d flex items-center gap-2" onclick="playSound('click')">
+            <i data-lucide="sparkles" class="w-4 h-4 text-gold-400"></i>
+            <span>Our Work</span>
+          </a>
+          <a href="#contact" class="px-6 py-3.5 rounded-xl bg-white/5 hover:bg-white/10 text-slate-300 hover:text-white font-bold text-sm uppercase tracking-wider border border-white/10 btn-3d flex items-center gap-2" onclick="playSound('click')">
+            <i data-lucide="mail" class="w-4 h-4 text-teal-400"></i>
+            <span>Contact Us</span>
+          </a>
+        </div>
+
+        <!-- 3D Glass Information Bar / Live Impact Counter -->
+        <div class="max-w-4xl mx-auto rounded-2xl glass-dark border border-white/15 p-6 sm:p-8 light-sweep-container shadow-2xl">
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center divide-y md:divide-y-0 md:divide-x divide-white/10">
+            <div class="pt-2 md:pt-0">
+              <p class="text-3xl sm:text-4xl font-extrabold font-display text-transparent bg-clip-text bg-gradient-to-r from-emeraldAccent-400 to-teal-300 counter" data-target="12500">12,500+</p>
+              <p class="text-xs uppercase tracking-wider text-slate-400 font-semibold mt-1">Lives Touched</p>
+            </div>
+            <div class="pt-4 md:pt-0">
+              <p class="text-3xl sm:text-4xl font-extrabold font-display text-transparent bg-clip-text bg-gradient-to-r from-gold-400 to-amber-300 counter" data-target="350">350+</p>
+              <p class="text-xs uppercase tracking-wider text-slate-400 font-semibold mt-1">Dedicated Volunteers</p>
+            </div>
+            <div class="pt-4 md:pt-0">
+              <p class="text-3xl sm:text-4xl font-extrabold font-display text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-emeraldAccent-300 counter" data-target="18">18+</p>
+              <p class="text-xs uppercase tracking-wider text-slate-400 font-semibold mt-1">Active Initiatives</p>
+            </div>
+            <div class="pt-4 md:pt-0">
+              <p class="text-3xl sm:text-4xl font-extrabold font-display text-transparent bg-clip-text bg-gradient-to-r from-emeraldAccent-400 to-gold-400 counter" data-target="45">45+</p>
+              <p class="text-xs uppercase tracking-wider text-slate-400 font-semibold mt-1">Communities Reached</p>
+            </div>
+          </div>
+          <p class="text-[11px] text-slate-400 text-center mt-4 tracking-wide font-medium">
+            * Verified field outreach metrics & humanitarian activity indicators across Odisha.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== HOME: WHO WE ARE & MISSION ==================== -->
+    <section class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-xs uppercase font-extrabold tracking-widest text-emeraldAccent-400 bg-emeraldAccent-500/10 px-4 py-1.5 rounded-full border border-emeraldAccent-500/20">
+          Our Foundation
+        </span>
+        <h2 class="text-3xl sm:text-4xl md:text-5xl font-extrabold font-display text-white mt-4 tracking-tight">
+          Compassion Driven By Purpose & Dignity
+        </h2>
+        <p class="text-slate-300 mt-4 text-base sm:text-lg">
+          At Kalyani Charitable Trust, we believe that true social progress begins by recognizing the inherent dignity of every human being. We operate with radical transparency, deep community respect, and relentless dedication.
+        </p>
+      </div>
+
+      <!-- 3D Mission & Philosophy Cards -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="glass-dark rounded-3xl p-8 border border-white/10 glass-card light-sweep-container">
+          <div class="w-14 h-14 rounded-2xl bg-emeraldAccent-500/20 border border-emeraldAccent-400/40 flex items-center justify-center text-emeraldAccent-400 mb-6 shadow-lg shadow-emeraldAccent-500/10">
+            <i data-lucide="eye" class="w-7 h-7"></i>
+          </div>
+          <h3 class="text-xl font-bold font-display text-white mb-3">Our Vision</h3>
+          <p class="text-slate-300 text-sm leading-relaxed">
+            A resilient society where poverty, lack of education, and healthcare disparities no longer dictate a child's or a family's destiny. We envision self-reliant, enlightened, and compassionate communities.
+          </p>
+        </div>
+
+        <div class="glass-dark rounded-3xl p-8 border border-white/10 glass-card light-sweep-container">
+          <div class="w-14 h-14 rounded-2xl bg-gold-400/20 border border-gold-400/40 flex items-center justify-center text-gold-400 mb-6 shadow-lg shadow-gold-400/10">
+            <i data-lucide="target" class="w-7 h-7"></i>
+          </div>
+          <h3 class="text-xl font-bold font-display text-white mb-3">Our Mission</h3>
+          <p class="text-slate-300 text-sm leading-relaxed">
+            To bridge social and economic gaps through high-impact, community-owned interventions in basic schooling, preventive healthcare, livelihood guidance, and crisis distribution for marginalized populations.
+          </p>
+        </div>
+
+        <div class="glass-dark rounded-3xl p-8 border border-white/10 glass-card light-sweep-container">
+          <div class="w-14 h-14 rounded-2xl bg-teal-400/20 border border-teal-400/40 flex items-center justify-center text-teal-400 mb-6 shadow-lg shadow-teal-400/10">
+            <i data-lucide="shield-check" class="w-7 h-7"></i>
+          </div>
+          <h3 class="text-xl font-bold font-display text-white mb-3">Our Promise</h3>
+          <p class="text-slate-300 text-sm leading-relaxed">
+            Every rupee donated and every hour volunteered directly serves local beneficiaries. We commit to unwavering ethical governance, zero waste, and transparent impact auditing.
+          </p>
+        </div>
+      </div>
+
+      <!-- Core Values -->
+      <div class="mt-20">
+        <h3 class="text-center text-sm font-bold tracking-widest uppercase text-slate-400 mb-8">What We Stand For</h3>
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
+          <div class="glass-dark rounded-2xl p-5 text-center border border-white/5 hover:border-emeraldAccent-400/30 transition">
+            <div class="w-10 h-10 mx-auto rounded-xl bg-emeraldAccent-500/10 text-emeraldAccent-400 flex items-center justify-center mb-3">
+              <i data-lucide="heart" class="w-5 h-5"></i>
+            </div>
+            <h4 class="font-bold text-white text-sm">Compassion</h4>
+            <p class="text-[11px] text-slate-400 mt-1">Leading with empathy</p>
+          </div>
+          <div class="glass-dark rounded-2xl p-5 text-center border border-white/5 hover:border-gold-400/30 transition">
+            <div class="w-10 h-10 mx-auto rounded-xl bg-gold-400/10 text-gold-400 flex items-center justify-center mb-3">
+              <i data-lucide="award" class="w-5 h-5"></i>
+            </div>
+            <h4 class="font-bold text-white text-sm">Dignity</h4>
+            <p class="text-[11px] text-slate-400 mt-1">Respecting every soul</p>
+          </div>
+          <div class="glass-dark rounded-2xl p-5 text-center border border-white/5 hover:border-teal-400/30 transition">
+            <div class="w-10 h-10 mx-auto rounded-xl bg-teal-400/10 text-teal-400 flex items-center justify-center mb-3">
+              <i data-lucide="scale" class="w-5 h-5"></i>
+            </div>
+            <h4 class="font-bold text-white text-sm">Equality</h4>
+            <p class="text-[11px] text-slate-400 mt-1">Fair chances for all</p>
+          </div>
+          <div class="glass-dark rounded-2xl p-5 text-center border border-white/5 hover:border-emeraldAccent-400/30 transition">
+            <div class="w-10 h-10 mx-auto rounded-xl bg-emeraldAccent-500/10 text-emeraldAccent-400 flex items-center justify-center mb-3">
+              <i data-lucide="users" class="w-5 h-5"></i>
+            </div>
+            <h4 class="font-bold text-white text-sm">Community</h4>
+            <p class="text-[11px] text-slate-400 mt-1">Together we rise</p>
+          </div>
+          <div class="glass-dark rounded-2xl p-5 text-center border border-white/5 hover:border-gold-400/30 transition">
+            <div class="w-10 h-10 mx-auto rounded-xl bg-gold-400/10 text-gold-400 flex items-center justify-center mb-3">
+              <i data-lucide="check-circle-2" class="w-5 h-5"></i>
+            </div>
+            <h4 class="font-bold text-white text-sm">Responsibility</h4>
+            <p class="text-[11px] text-slate-400 mt-1">Absolute transparency</p>
+          </div>
+          <div class="glass-dark rounded-2xl p-5 text-center border border-white/5 hover:border-teal-400/30 transition">
+            <div class="w-10 h-10 mx-auto rounded-xl bg-teal-400/10 text-teal-400 flex items-center justify-center mb-3">
+              <i data-lucide="sun" class="w-5 h-5"></i>
+            </div>
+            <h4 class="font-bold text-white text-sm">Hope</h4>
+            <p class="text-[11px] text-slate-400 mt-1">Lighting dark paths</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== PAGE 02: ABOUT US ==================== -->
+    <section id="about" class="py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-t border-white/10">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
+        <div>
+          <span class="text-xs uppercase font-extrabold tracking-widest text-gold-400 bg-gold-400/10 px-4 py-1.5 rounded-full border border-gold-400/20">
+            Page 02 • Who We Are
+          </span>
+          <h2 class="text-3xl sm:text-5xl font-extrabold font-display text-white mt-4 tracking-tight leading-tight">
+            Rooted in Odisha, Serving Humanity With Open Hearts
+          </h2>
+          <p class="text-slate-300 mt-6 text-base sm:text-lg leading-relaxed">
+            Kalyani Charitable Trust was founded in Cuttack with an urgent conviction: that compassionate individuals, working hand-in-hand with grassroots communities, can resolve persistent social challenges.
+          </p>
+          <p class="text-slate-300 mt-4 text-base sm:text-lg leading-relaxed">
+            Our volunteers do not merely visit villages; they live the struggles, understand the local nuances, and design sustainable, dignified paths toward self-reliance. From tutoring underprivileged kids to conducting regular mobile health clinics in remote clusters, every initiative is built around human empathy.
+          </p>
+          <div class="mt-8 flex flex-wrap gap-4">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-full bg-emeraldAccent-500/20 flex items-center justify-center text-emeraldAccent-400">
+                <i data-lucide="map-pin" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <p class="text-xs text-slate-400 uppercase font-semibold">Headquarters</p>
+                <p class="text-sm font-bold text-white">Cuttack, Odisha, India</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-full bg-gold-400/20 flex items-center justify-center text-gold-400">
+                <i data-lucide="file-check" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <p class="text-xs text-slate-400 uppercase font-semibold">Status</p>
+                <p class="text-sm font-bold text-white">Registered Charitable Trust</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="relative">
+          <div class="relative rounded-3xl overflow-hidden shadow-2xl border border-white/10 group">
+            <img src="https://images.unsplash.com/photo-1593113598332-cd288d649433?q=80&w=1200&auto=format&fit=crop" alt="Volunteers serving food and caring for community members" class="w-full h-[450px] object-cover group-hover:scale-105 transition-transform duration-700 filter brightness-90" />
+            <div class="absolute inset-0 bg-gradient-to-t from-midnight-950 via-transparent to-transparent"></div>
+            <div class="absolute bottom-6 left-6 right-6 p-6 rounded-2xl glass-dark border border-white/15">
+              <p class="text-xs font-mono uppercase tracking-widest text-emeraldAccent-400 font-semibold">Community Philosophy</p>
+              <p class="text-sm text-slate-200 mt-1 italic font-serif">
+                "We do not offer charity as a handout. We walk alongside our fellow citizens as companions in dignity and empowerment."
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Animated Vertical Story Timeline -->
+      <div class="mt-20">
+        <div class="text-center mb-16">
+          <span class="text-xs uppercase font-extrabold tracking-widest text-emeraldAccent-400">Our Evolution</span>
+          <h3 class="text-2xl sm:text-3xl font-bold font-display text-white mt-2">The Kalyani Journey</h3>
+        </div>
+
+        <div class="relative border-l-2 border-emeraldAccent-500/30 ml-4 md:ml-1/2 space-y-12 pl-6 md:pl-0">
+          <!-- Timeline Item 1 -->
+          <div class="relative md:flex items-center justify-between group">
+            <div class="md:w-5/12 md:text-right md:pr-10">
+              <span class="text-xs font-mono font-bold text-emeraldAccent-400 uppercase tracking-widest">Phase 01</span>
+              <h4 class="text-lg font-bold text-white mt-1">THE BEGINNING</h4>
+              <p class="text-sm text-slate-300 mt-2">A small group of committed youth in Cuttack began distributing warm clothes, rations, and tutoring children in slum settlements after school.</p>
+            </div>
+            <div class="absolute -left-[31px] md:left-1/2 md:-ml-3 w-6 h-6 rounded-full bg-midnight-950 border-4 border-emeraldAccent-400 shadow-[0_0_15px_rgba(16,185,129,0.5)]"></div>
+            <div class="hidden md:block md:w-5/12"></div>
+          </div>
+
+          <!-- Timeline Item 2 -->
+          <div class="relative md:flex items-center justify-between group">
+            <div class="hidden md:block md:w-5/12"></div>
+            <div class="absolute -left-[31px] md:left-1/2 md:-ml-3 w-6 h-6 rounded-full bg-midnight-950 border-4 border-gold-400 shadow-[0_0_15px_rgba(214,158,46,0.5)]"></div>
+            <div class="md:w-5/12 md:pl-10">
+              <span class="text-xs font-mono font-bold text-gold-400 uppercase tracking-widest">Phase 02</span>
+              <h4 class="text-lg font-bold text-white mt-1">THE JOURNEY</h4>
+              <p class="text-sm text-slate-300 mt-2">Formal registration as Kalyani Charitable Trust, establishing formal medical camp partnerships and volunteer networks across coastal Odisha.</p>
+            </div>
+          </div>
+
+          <!-- Timeline Item 3 -->
+          <div class="relative md:flex items-center justify-between group">
+            <div class="md:w-5/12 md:text-right md:pr-10">
+              <span class="text-xs font-mono font-bold text-teal-400 uppercase tracking-widest">Phase 03</span>
+              <h4 class="text-lg font-bold text-white mt-1">THE PEOPLE</h4>
+              <p class="text-sm text-slate-300 mt-2">Expansion to over 350 active ground volunteers, launching women's self-help skill centers and child nutrition drives.</p>
+            </div>
+            <div class="absolute -left-[31px] md:left-1/2 md:-ml-3 w-6 h-6 rounded-full bg-midnight-950 border-4 border-teal-400 shadow-[0_0_15px_rgba(45,212,191,0.5)]"></div>
+            <div class="hidden md:block md:w-5/12"></div>
+          </div>
+
+          <!-- Timeline Item 4 -->
+          <div class="relative md:flex items-center justify-between group">
+            <div class="hidden md:block md:w-5/12"></div>
+            <div class="absolute -left-[31px] md:left-1/2 md:-ml-3 w-6 h-6 rounded-full bg-midnight-950 border-4 border-emeraldAccent-400 shadow-[0_0_15px_rgba(16,185,129,0.5)]"></div>
+            <div class="md:w-5/12 md:pl-10">
+              <span class="text-xs font-mono font-bold text-emeraldAccent-400 uppercase tracking-widest">Phase 04</span>
+              <h4 class="text-lg font-bold text-white mt-1">THE IMPACT</h4>
+              <p class="text-sm text-slate-300 mt-2">Surpassing 12,500 direct lives touched with educational materials, free medicine, eye checkups, and disaster relief during flood seasons.</p>
+            </div>
+          </div>
+
+          <!-- Timeline Item 5 -->
+          <div class="relative md:flex items-center justify-between group">
+            <div class="md:w-5/12 md:text-right md:pr-10">
+              <span class="text-xs font-mono font-bold text-gold-400 uppercase tracking-widest">Phase 05</span>
+              <h4 class="text-lg font-bold text-white mt-1">THE FUTURE</h4>
+              <p class="text-sm text-slate-300 mt-2">Building permanent community learning and healthcare centers, expanding digital literacy, and scaling climate resilience models.</p>
+            </div>
+            <div class="absolute -left-[31px] md:left-1/2 md:-ml-3 w-6 h-6 rounded-full bg-midnight-950 border-4 border-gold-400 shadow-[0_0_15px_rgba(214,158,46,0.5)]"></div>
+            <div class="hidden md:block md:w-5/12"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== PAGE 03: OUR PROGRAMMES ==================== -->
+    <section id="programmes" class="py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-t border-white/10">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-xs uppercase font-extrabold tracking-widest text-emeraldAccent-400 bg-emeraldAccent-500/10 px-4 py-1.5 rounded-full border border-emeraldAccent-500/20">
+          Page 03 • Grassroots Action
+        </span>
+        <h2 class="text-3xl sm:text-5xl font-extrabold font-display text-white mt-4 tracking-tight">
+          Our Verified Social Programmes
+        </h2>
+        <p class="text-slate-300 mt-4 text-base sm:text-lg">
+          Every programme is designed in consultation with community elders, teachers, and healthcare professionals to generate lasting, measurable transformation.
+        </p>
+      </div>
+
+      <!-- 6 Cinematic 3D Programme Cards Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- Programme 1: Education -->
+        <div class="glass-dark rounded-3xl overflow-hidden border border-white/10 glass-card flex flex-col group">
+          <div class="relative h-56 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=800&auto=format&fit=crop" alt="Children learning with books in classroom" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+            <div class="absolute inset-0 bg-gradient-to-t from-midnight-900 via-transparent to-transparent"></div>
+            <span class="absolute top-4 left-4 bg-emeraldAccent-600/90 backdrop-blur text-white text-[11px] font-bold uppercase tracking-wider px-3 py-1 rounded-full shadow">Education</span>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="text-xl font-bold font-display text-white group-hover:text-emeraldAccent-400 transition">Education For Every Child</h3>
+              <p class="text-slate-300 text-xs mt-2 leading-relaxed">Providing school kits, notebooks, bridge tutoring, and digital learning tools to children from low-income families.</p>
+              <div class="mt-4 pt-4 border-t border-white/10 space-y-2 text-xs">
+                <div class="flex justify-between text-slate-300">
+                  <span class="text-slate-400">Objective:</span>
+                  <span class="font-medium text-white">Prevent school dropouts</span>
+                </div>
+                <div class="flex justify-between text-slate-300">
+                  <span class="text-slate-400">Beneficiaries:</span>
+                  <span class="font-medium text-white">3,200+ Students</span>
+                </div>
+              </div>
+            </div>
+            <button onclick="openProgrammeModal('education')" class="mt-6 w-full py-2.5 rounded-xl bg-white/5 hover:bg-emeraldAccent-500/20 text-emeraldAccent-300 font-semibold text-xs uppercase tracking-wider border border-white/10 hover:border-emeraldAccent-400/40 transition">
+              Learn More & Impact Details
+            </button>
+          </div>
+        </div>
+
+        <!-- Programme 2: Healthcare -->
+        <div class="glass-dark rounded-3xl overflow-hidden border border-white/10 glass-card flex flex-col group">
+          <div class="relative h-56 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?q=80&w=800&auto=format&fit=crop" alt="Community health checkup camp and doctor" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+            <div class="absolute inset-0 bg-gradient-to-t from-midnight-900 via-transparent to-transparent"></div>
+            <span class="absolute top-4 left-4 bg-teal-600/90 backdrop-blur text-white text-[11px] font-bold uppercase tracking-wider px-3 py-1 rounded-full shadow">Healthcare</span>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="text-xl font-bold font-display text-white group-hover:text-teal-300 transition">Community Health & Camps</h3>
+              <p class="text-slate-300 text-xs mt-2 leading-relaxed">Free diagnostic checkups, medicine distribution, eye screenings, and maternal care awareness across remote settlements.</p>
+              <div class="mt-4 pt-4 border-t border-white/10 space-y-2 text-xs">
+                <div class="flex justify-between text-slate-300">
+                  <span class="text-slate-400">Objective:</span>
+                  <span class="font-medium text-white">Preventive healthcare access</span>
+                </div>
+                <div class="flex justify-between text-slate-300">
+                  <span class="text-slate-400">Beneficiaries:</span>
+                  <span class="font-medium text-white">5,000+ Treated</span>
+                </div>
+              </div>
+            </div>
+            <button onclick="openProgrammeModal('healthcare')" class="mt-6 w-full py-2.5 rounded-xl bg-white/5 hover:bg-teal-500/20 text-teal-300 font-semibold text-xs uppercase tracking-wider border border-white/10 hover:border-teal-400/40 transition">
+              Learn More & Impact Details
+            </button>
+          </div>
+        </div>
+
+        <!-- Programme 3: Women Empowerment -->
+        <div class="glass-dark rounded-3xl overflow-hidden border border-white/10 glass-card flex flex-col group">
+          <div class="relative h-56 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=800&auto=format&fit=crop" alt="Empowered women working together in skill development" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+            <div class="absolute inset-0 bg-gradient-to-t from-midnight-900 via-transparent to-transparent"></div>
+            <span class="absolute top-4 left-4 bg-gold-600/90 backdrop-blur text-white text-[11px] font-bold uppercase tracking-wider px-3 py-1 rounded-full shadow">Livelihood</span>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="text-xl font-bold font-display text-white group-hover:text-gold-400 transition">Women's Livelihood & Skills</h3>
+              <p class="text-slate-300 text-xs mt-2 leading-relaxed">Vocational workshops in tailoring, handicrafts, food packaging, and financial literacy enabling women to become self-reliant.</p>
+              <div class="mt-4 pt-4 border-t border-white/10 space-y-2 text-xs">
+                <div class="flex justify-between text-slate-300">
+                  <span class="text-slate-400">Objective:</span>
+                  <span class="font-medium text-white">Economic independence</span>
+                </div>
+                <div class="flex justify-between text-slate-300">
+                  <span class="text-slate-400">Beneficiaries:</span>
+                  <span class="font-medium text-white">650+ Women</span>
+                </div>
+              </div>
+            </div>
+            <button onclick="openProgrammeModal('women')" class="mt-6 w-full py-2.5 rounded-xl bg-white/5 hover:bg-gold-500/20 text-gold-300 font-semibold text-xs uppercase tracking-wider border border-white/10 hover:border-gold-400/40 transition">
+              Learn More & Impact Details
+            </button>
+          </div>
+        </div>
+
+        <!-- Programme 4: Food & Relief -->
+        <div class="glass-dark rounded-3xl overflow-hidden border border-white/10 glass-card flex flex-col group">
+          <div class="relative h-56 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1593113598332-cd288d649433?q=80&w=800&auto=format&fit=crop" alt="Nutritional meals and food relief packets" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+            <div class="absolute inset-0 bg-gradient-to-t from-midnight-900 via-transparent to-transparent"></div>
+            <span class="absolute top-4 left-4 bg-amber-600/90 backdrop-blur text-white text-[11px] font-bold uppercase tracking-wider px-3 py-1 rounded-full shadow">Relief</span>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="text-xl font-bold font-display text-white group-hover:text-amber-400 transition">Food & Disaster Relief</h3>
+              <p class="text-slate-300 text-xs mt-2 leading-relaxed">Emergency nutrition packs, dry rations, hygiene supplies, and blankets delivered promptly during natural calamities and harsh winters.</p>
+              <div class="mt-4 pt-4 border-t border-white/10 space-y-2 text-xs">
+                <div class="flex justify-between text-slate-300">
+                  <span class="text-slate-400">Objective:</span>
+                  <span class="font-medium text-white">Zero hunger in emergencies</span>
+                </div>
+                <div class="flex justify-between text-slate-300">
+                  <span class="text-slate-400">Beneficiaries:</span>
+                  <span class="font-medium text-white">15,000+ Meals</span>
+                </div>
+              </div>
+            </div>
+            <button onclick="openProgrammeModal('relief')" class="mt-6 w-full py-2.5 rounded-xl bg-white/5 hover:bg-amber-500/20 text-amber-300 font-semibold text-xs uppercase tracking-wider border border-white/10 hover:border-amber-400/40 transition">
+              Learn More & Impact Details
+            </button>
+          </div>
+        </div>
+
+        <!-- Programme 5: Elder Care -->
+        <div class="glass-dark rounded-3xl overflow-hidden border border-white/10 glass-card flex flex-col group">
+          <div class="relative h-56 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1516307365426-bea591f05011?q=80&w=800&auto=format&fit=crop" alt="Senior citizens receiving care and companionship" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+            <div class="absolute inset-0 bg-gradient-to-t from-midnight-900 via-transparent to-transparent"></div>
+            <span class="absolute top-4 left-4 bg-rose-600/90 backdrop-blur text-white text-[11px] font-bold uppercase tracking-wider px-3 py-1 rounded-full shadow">Elder Support</span>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="text-xl font-bold font-display text-white group-hover:text-rose-400 transition">Senior Citizen Care & Dignity</h3>
+              <p class="text-slate-300 text-xs mt-2 leading-relaxed">Providing regular health monitoring, chronic medicines, walking aids, and companionship to destitute and lonely elderly citizens.</p>
+              <div class="mt-4 pt-4 border-t border-white/10 space-y-2 text-xs">
+                <div class="flex justify-between text-slate-300">
+                  <span class="text-slate-400">Objective:</span>
+                  <span class="font-medium text-white">Dignified aging with care</span>
+                </div>
+                <div class="flex justify-between text-slate-300">
+                  <span class="text-slate-400">Beneficiaries:</span>
+                  <span class="font-medium text-white">450+ Seniors</span>
+                </div>
+              </div>
+            </div>
+            <button onclick="openProgrammeModal('elder')" class="mt-6 w-full py-2.5 rounded-xl bg-white/5 hover:bg-rose-500/20 text-rose-300 font-semibold text-xs uppercase tracking-wider border border-white/10 hover:border-rose-400/40 transition">
+              Learn More & Impact Details
+            </button>
+          </div>
+        </div>
+
+        <!-- Programme 6: Environment -->
+        <div class="glass-dark rounded-3xl overflow-hidden border border-white/10 glass-card flex flex-col group">
+          <div class="relative h-56 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?q=80&w=800&auto=format&fit=crop" alt="Volunteers planting saplings and trees" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+            <div class="absolute inset-0 bg-gradient-to-t from-midnight-900 via-transparent to-transparent"></div>
+            <span class="absolute top-4 left-4 bg-emeraldAccent-700/90 backdrop-blur text-white text-[11px] font-bold uppercase tracking-wider px-3 py-1 rounded-full shadow">Environment</span>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="text-xl font-bold font-display text-white group-hover:text-emeraldAccent-400 transition">Green Earth & Clean Water</h3>
+              <p class="text-slate-300 text-xs mt-2 leading-relaxed">Mass tree plantation drives along riverbanks, cleanliness sanitation drives, and installation of clean drinking water filters in schools.</p>
+              <div class="mt-4 pt-4 border-t border-white/10 space-y-2 text-xs">
+                <div class="flex justify-between text-slate-300">
+                  <span class="text-slate-400">Objective:</span>
+                  <span class="font-medium text-white">Eco-resilience & hygiene</span>
+                </div>
+                <div class="flex justify-between text-slate-300">
+                  <span class="text-slate-400">Beneficiaries:</span>
+                  <span class="font-medium text-white">4,000+ Saplings planted</span>
+                </div>
+              </div>
+            </div>
+            <button onclick="openProgrammeModal('green')" class="mt-6 w-full py-2.5 rounded-xl bg-white/5 hover:bg-emeraldAccent-500/20 text-emeraldAccent-300 font-semibold text-xs uppercase tracking-wider border border-white/10 hover:border-emeraldAccent-400/40 transition">
+              Learn More & Impact Details
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== PAGE 04: OUR IMPACT ==================== -->
+    <section id="impact" class="py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-t border-white/10">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-xs uppercase font-extrabold tracking-widest text-teal-400 bg-teal-400/10 px-4 py-1.5 rounded-full border border-teal-400/20">
+          Page 04 • Measurable Change
+        </span>
+        <h2 class="text-3xl sm:text-5xl font-extrabold font-display text-white mt-4 tracking-tight">
+          From Intention to Lasting Impact
+        </h2>
+        <p class="text-slate-300 mt-4 text-base sm:text-lg">
+          We track every initiative through transparent outcome markers. Here is how empathy transforms into tangible, long-term change.
+        </p>
+      </div>
+
+      <!-- 5-Stage Impact Journey Graphic -->
+      <div class="glass-dark rounded-3xl p-8 sm:p-12 border border-white/10 light-sweep-container mb-16 shadow-2xl">
+        <h3 class="text-xl font-bold font-display text-white mb-8 text-center sm:text-left">The Kalyani Impact Journey</h3>
+        <div class="grid grid-cols-1 md:grid-cols-5 gap-6 relative">
+          
+          <div class="relative p-5 rounded-2xl bg-white/5 border border-white/10 text-center">
+            <span class="w-8 h-8 rounded-full bg-emeraldAccent-500/20 text-emeraldAccent-400 font-mono text-xs font-bold flex items-center justify-center mx-auto mb-3">01</span>
+            <h4 class="font-bold text-white text-sm">NEED</h4>
+            <p class="text-xs text-slate-300 mt-2">In-depth ground survey identifying vulnerable families, children out of school, or health risks.</p>
+          </div>
+
+          <div class="relative p-5 rounded-2xl bg-white/5 border border-white/10 text-center">
+            <span class="w-8 h-8 rounded-full bg-gold-400/20 text-gold-400 font-mono text-xs font-bold flex items-center justify-center mx-auto mb-3">02</span>
+            <h4 class="font-bold text-white text-sm">ACTION</h4>
+            <p class="text-xs text-slate-300 mt-2">Mobilizing medical camps, teachers, emergency kits, or vocational trainers to the field.</p>
+          </div>
+
+          <div class="relative p-5 rounded-2xl bg-white/5 border border-white/10 text-center">
+            <span class="w-8 h-8 rounded-full bg-teal-400/20 text-teal-400 font-mono text-xs font-bold flex items-center justify-center mx-auto mb-3">03</span>
+            <h4 class="font-bold text-white text-sm">PARTICIPATION</h4>
+            <p class="text-xs text-slate-300 mt-2">Community ownership where locals participate, learn, and lead local management.</p>
+          </div>
+
+          <div class="relative p-5 rounded-2xl bg-white/5 border border-white/10 text-center">
+            <span class="w-8 h-8 rounded-full bg-emeraldAccent-500/20 text-emeraldAccent-400 font-mono text-xs font-bold flex items-center justify-center mx-auto mb-3">04</span>
+            <h4 class="font-bold text-white text-sm">CHANGE</h4>
+            <p class="text-xs text-slate-300 mt-2">Immediate relief: improved health markers, children passing exams, women earning income.</p>
+          </div>
+
+          <div class="relative p-5 rounded-2xl bg-white/5 border border-white/10 text-center">
+            <span class="w-8 h-8 rounded-full bg-gold-400/20 text-gold-400 font-mono text-xs font-bold flex items-center justify-center mx-auto mb-3">05</span>
+            <h4 class="font-bold text-white text-sm">LONG-TERM IMPACT</h4>
+            <p class="text-xs text-slate-300 mt-2">Generational upliftment: poverty cycles broken, community resilience solidified.</p>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Verified Impact Breakdown Matrix -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="glass-dark rounded-3xl p-8 border border-white/10">
+          <div class="flex items-center justify-between mb-4">
+            <span class="text-3xl font-extrabold text-emeraldAccent-400 font-display">94%</span>
+            <span class="text-xs font-mono uppercase bg-emeraldAccent-500/10 text-emeraldAccent-400 px-2.5 py-1 rounded-full">Retention</span>
+          </div>
+          <h4 class="text-base font-bold text-white">Student Academic Retention</h4>
+          <p class="text-xs text-slate-300 mt-2 leading-relaxed">Children enrolled in our evening remedial classes successfully continue into secondary education without dropping out.</p>
+        </div>
+
+        <div class="glass-dark rounded-3xl p-8 border border-white/10">
+          <div class="flex items-center justify-between mb-4">
+            <span class="text-3xl font-extrabold text-gold-400 font-display">100%</span>
+            <span class="text-xs font-mono uppercase bg-gold-400/10 text-gold-400 px-2.5 py-1 rounded-full">Transparency</span>
+          </div>
+          <h4 class="text-base font-bold text-white">Audited Financial Stewardship</h4>
+          <p class="text-xs text-slate-300 mt-2 leading-relaxed">Direct allocation to verified program costs, with administrative expenditure maintained below strictly audited thresholds.</p>
+        </div>
+
+        <div class="glass-dark rounded-3xl p-8 border border-white/10">
+          <div class="flex items-center justify-between mb-4">
+            <span class="text-3xl font-extrabold text-teal-400 font-display">48 Hrs</span>
+            <span class="text-xs font-mono uppercase bg-teal-400/10 text-teal-400 px-2.5 py-1 rounded-full">Rapid Response</span>
+          </div>
+          <h4 class="text-base font-bold text-white">Emergency Calamity Dispatch</h4>
+          <p class="text-xs text-slate-300 mt-2 leading-relaxed">During coastal storms and river overflows, our local volunteers mobilize survival dry kits and water purifying tablets within 48 hours.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== PAGE 05: GET INVOLVED ==================== -->
+    <section id="get-involved" class="py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-t border-white/10">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-xs uppercase font-extrabold tracking-widest text-emeraldAccent-400 bg-emeraldAccent-500/10 px-4 py-1.5 rounded-full border border-emeraldAccent-500/20">
+          Page 05 • Join The Mission
+        </span>
+        <h2 class="text-3xl sm:text-5xl font-extrabold font-display text-white mt-4 tracking-tight">
+          Be The Hands That Lift Others
+        </h2>
+        <p class="text-slate-300 mt-4 text-base sm:text-lg">
+          Whether you have an hour a week, specialized medical expertise, educational passion, or resources to contribute, you have a vital role in our movement.
+        </p>
+      </div>
+
+      <!-- 5 Participation Pathways -->
+      <div class="grid grid-cols-2 md:grid-cols-5 gap-4 mb-16">
+        <div class="glass-dark rounded-2xl p-5 text-center border border-white/10 hover:border-emeraldAccent-400/40 transition">
+          <div class="w-10 h-10 rounded-xl bg-emeraldAccent-500/20 text-emeraldAccent-400 flex items-center justify-center mx-auto mb-3">
+            <i data-lucide="hand-heart" class="w-5 h-5"></i>
+          </div>
+          <h4 class="font-bold text-white text-xs sm:text-sm">Volunteer</h4>
+          <p class="text-[11px] text-slate-400 mt-1">Field & teaching</p>
+        </div>
+
+        <div class="glass-dark rounded-2xl p-5 text-center border border-white/10 hover:border-gold-400/40 transition">
+          <div class="w-10 h-10 rounded-xl bg-gold-400/20 text-gold-400 flex items-center justify-center mx-auto mb-3">
+            <i data-lucide="gift" class="w-5 h-5"></i>
+          </div>
+          <h4 class="font-bold text-white text-xs sm:text-sm">Donate</h4>
+          <p class="text-[11px] text-slate-400 mt-1">Direct support</p>
+        </div>
+
+        <div class="glass-dark rounded-2xl p-5 text-center border border-white/10 hover:border-teal-400/40 transition">
+          <div class="w-10 h-10 rounded-xl bg-teal-400/20 text-teal-400 flex items-center justify-center mx-auto mb-3">
+            <i data-lucide="building-2" class="w-5 h-5"></i>
+          </div>
+          <h4 class="font-bold text-white text-xs sm:text-sm">Partner</h4>
+          <p class="text-[11px] text-slate-400 mt-1">CSR & Institutions</p>
+        </div>
+
+        <div class="glass-dark rounded-2xl p-5 text-center border border-white/10 hover:border-emeraldAccent-400/40 transition">
+          <div class="w-10 h-10 rounded-xl bg-emeraldAccent-500/20 text-emeraldAccent-400 flex items-center justify-center mx-auto mb-3">
+            <i data-lucide="book-open-check" class="w-5 h-5"></i>
+          </div>
+          <h4 class="font-bold text-white text-xs sm:text-sm">Sponsor</h4>
+          <p class="text-[11px] text-slate-400 mt-1">Fund a child</p>
+        </div>
+
+        <div class="glass-dark rounded-2xl p-5 text-center border border-white/10 hover:border-gold-400/40 transition col-span-2 md:col-span-1">
+          <div class="w-10 h-10 rounded-xl bg-gold-400/20 text-gold-400 flex items-center justify-center mx-auto mb-3">
+            <i data-lucide="calendar" class="w-5 h-5"></i>
+          </div>
+          <h4 class="font-bold text-white text-xs sm:text-sm">Organize Event</h4>
+          <p class="text-[11px] text-slate-400 mt-1">Awareness drives</p>
+        </div>
+      </div>
+
+      <!-- Volunteer Registration Form -->
+      <div class="max-w-3xl mx-auto glass-dark rounded-3xl p-8 sm:p-10 border border-white/15 light-sweep-container shadow-2xl">
+        <div class="flex items-center gap-3 mb-6">
+          <div class="w-10 h-10 rounded-xl bg-emeraldAccent-500/20 text-emeraldAccent-400 flex items-center justify-center">
+            <i data-lucide="user-plus" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <h3 class="text-xl font-bold font-display text-white">Volunteer Enrollment Form</h3>
+            <p class="text-xs text-slate-400">Join our growing family of changemakers in Cuttack & Odisha.</p>
+          </div>
+        </div>
+
+        <form id="volunteer-form" onsubmit="handleVolunteerSubmit(event)" class="space-y-5">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+            <div>
+              <label for="vol-name" class="block text-xs font-semibold uppercase text-slate-300 mb-1.5">Full Name *</label>
+              <input type="text" id="vol-name" required placeholder="Your full name" class="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-slate-500 focus:outline-none focus:border-emeraldAccent-400 focus:ring-1 focus:ring-emeraldAccent-400 text-sm transition" />
+            </div>
+            <div>
+              <label for="vol-phone" class="block text-xs font-semibold uppercase text-slate-300 mb-1.5">Phone Number *</label>
+              <input type="tel" id="vol-phone" required placeholder="e.g. 8277754614" class="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-slate-500 focus:outline-none focus:border-emeraldAccent-400 focus:ring-1 focus:ring-emeraldAccent-400 text-sm transition" />
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+            <div>
+              <label for="vol-email" class="block text-xs font-semibold uppercase text-slate-300 mb-1.5">Email Address *</label>
+              <input type="email" id="vol-email" required placeholder="name@example.com" class="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-slate-500 focus:outline-none focus:border-emeraldAccent-400 focus:ring-1 focus:ring-emeraldAccent-400 text-sm transition" />
+            </div>
+            <div>
+              <label for="vol-city" class="block text-xs font-semibold uppercase text-slate-300 mb-1.5">City / Location *</label>
+              <input type="text" id="vol-city" required placeholder="Cuttack, Bhubaneswar, etc." class="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-slate-500 focus:outline-none focus:border-emeraldAccent-400 focus:ring-1 focus:ring-emeraldAccent-400 text-sm transition" />
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+            <div>
+              <label for="vol-interest" class="block text-xs font-semibold uppercase text-slate-300 mb-1.5">Interest Area *</label>
+              <select id="vol-interest" required class="w-full px-4 py-3 rounded-xl bg-midnight-900 border border-white/10 text-white focus:outline-none focus:border-emeraldAccent-400 text-sm transition">
+                <option value="Education & Tutoring">Child Education & Tutoring</option>
+                <option value="Health Camps & Medical">Health Camps & Medical Logistics</option>
+                <option value="Women Skills">Women Skill Development</option>
+                <option value="Food & Emergency Relief">Food & Emergency Relief</option>
+                <option value="Digital Media & Photography">Digital Media & Outreach</option>
+                <option value="Tree Plantation">Environment & Tree Plantation</option>
+              </select>
+            </div>
+            <div>
+              <label for="vol-avail" class="block text-xs font-semibold uppercase text-slate-300 mb-1.5">Availability *</label>
+              <select id="vol-avail" required class="w-full px-4 py-3 rounded-xl bg-midnight-900 border border-white/10 text-white focus:outline-none focus:border-emeraldAccent-400 text-sm transition">
+                <option value="Weekends Only">Weekends (Saturday / Sunday)</option>
+                <option value="Few Hours Weekly">2-4 Hours Weekly</option>
+                <option value="Full Time / Project">Full Time / Project Basis</option>
+                <option value="Emergency Relief Call">On-Call During Disasters</option>
+              </select>
+            </div>
+          </div>
+
+          <div>
+            <label for="vol-message" class="block text-xs font-semibold uppercase text-slate-300 mb-1.5">Brief Note or Skills</label>
+            <textarea id="vol-message" rows="3" placeholder="Tell us about yourself or how you would like to help..." class="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-slate-500 focus:outline-none focus:border-emeraldAccent-400 text-sm transition"></textarea>
+          </div>
+
+          <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-emeraldAccent-500 to-emeraldAccent-600 hover:from-emeraldAccent-400 hover:to-emeraldAccent-500 text-white font-extrabold text-sm uppercase tracking-wider shadow-lg shadow-emeraldAccent-500/25 btn-3d flex items-center justify-center gap-2">
+            <i data-lucide="check-circle" class="w-4 h-4"></i>
+            <span>Submit Volunteer Application</span>
+          </button>
+        </form>
+
+        <!-- Volunteer Success Message (hidden by default) -->
+        <div id="volunteer-success" class="hidden mt-6 p-6 rounded-2xl bg-emeraldAccent-500/20 border border-emeraldAccent-400/40 text-center animate-fade-in">
+          <div class="w-12 h-12 rounded-full bg-emeraldAccent-500 text-white flex items-center justify-center mx-auto mb-3">
+            <i data-lucide="check" class="w-6 h-6"></i>
+          </div>
+          <h4 class="text-lg font-bold text-white font-display">Thank You For Answering The Call!</h4>
+          <p class="text-sm text-emeraldAccent-200 mt-1">Our coordinator will contact you via WhatsApp / Phone to welcome you to the Kalyani family.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== PAGE 06: DONATE / SUPPORT ==================== -->
+    <section id="donate" class="py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-t border-white/10">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-xs uppercase font-extrabold tracking-widest text-gold-400 bg-gold-400/10 px-4 py-1.5 rounded-full border border-gold-400/20">
+          Page 06 • Transparent Giving
+        </span>
+        <h2 class="text-3xl sm:text-5xl font-extrabold font-display text-white mt-4 tracking-tight">
+          Your Support Can Become Someone's Hope
+        </h2>
+        <p class="text-slate-300 mt-4 text-base sm:text-lg">
+          Transform lives directly. 100% of public donations are channelled straight into our on-ground food, education, and health distributions.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+        
+        <!-- Left Column: Interactive Donation Box -->
+        <div class="lg:col-span-7 glass-dark rounded-3xl p-6 sm:p-10 border border-white/15 light-sweep-container shadow-2xl">
+          
+          <!-- One-time vs Monthly Toggle -->
+          <div class="flex rounded-2xl bg-midnight-900 p-1.5 border border-white/10 mb-8 max-w-md mx-auto">
+            <button id="btn-freq-once" onclick="setDonationFrequency('one-time')" class="flex-1 py-2.5 rounded-xl text-xs font-bold uppercase tracking-wider bg-emeraldAccent-500 text-white shadow-md transition">
+              One-Time Gift
+            </button>
+            <button id="btn-freq-monthly" onclick="setDonationFrequency('monthly')" class="flex-1 py-2.5 rounded-xl text-xs font-bold uppercase tracking-wider text-slate-400 hover:text-white transition">
+              Monthly Guardian
+            </button>
+          </div>
+
+          <!-- Preset Amounts -->
+          <label class="block text-xs font-semibold uppercase text-slate-300 mb-3 text-center sm:text-left">Select Amount (INR ₹)</label>
+          <div class="grid grid-cols-3 sm:grid-cols-5 gap-3 mb-6">
+            <button type="button" onclick="selectAmount(500, this)" class="amount-btn py-3 px-2 rounded-xl border border-white/10 bg-white/5 hover:border-emeraldAccent-400 text-white text-sm font-bold transition">₹500</button>
+            <button type="button" onclick="selectAmount(1000, this)" class="amount-btn py-3 px-2 rounded-xl border border-emeraldAccent-400 bg-emeraldAccent-500/20 text-emeraldAccent-300 text-sm font-bold transition">₹1,000</button>
+            <button type="button" onclick="selectAmount(2500, this)" class="amount-btn py-3 px-2 rounded-xl border border-white/10 bg-white/5 hover:border-emeraldAccent-400 text-white text-sm font-bold transition">₹2,500</button>
+            <button type="button" onclick="selectAmount(5000, this)" class="amount-btn py-3 px-2 rounded-xl border border-white/10 bg-white/5 hover:border-emeraldAccent-400 text-white text-sm font-bold transition">₹5,000</button>
+            <button type="button" onclick="selectAmount(10000, this)" class="amount-btn py-3 px-2 rounded-xl border border-white/10 bg-white/5 hover:border-emeraldAccent-400 text-white text-sm font-bold transition">₹10,000</button>
+          </div>
+
+          <!-- Custom Amount & Designation -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+            <div>
+              <label for="custom-amount" class="block text-xs font-semibold uppercase text-slate-300 mb-1.5">Custom Amount (₹)</label>
+              <div class="relative">
+                <span class="absolute left-4 top-3 text-slate-400 font-bold">₹</span>
+                <input type="number" id="custom-amount" value="1000" min="100" oninput="onCustomAmountChange(this.value)" class="w-full pl-8 pr-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white font-bold text-sm focus:outline-none focus:border-emeraldAccent-400 transition" />
+              </div>
+            </div>
+            <div>
+              <label for="cause-select" class="block text-xs font-semibold uppercase text-slate-300 mb-1.5">Designate To Programme</label>
+              <select id="cause-select" onchange="updateImpactExplanation()" class="w-full px-4 py-3 rounded-xl bg-midnight-900 border border-white/10 text-white text-sm focus:outline-none focus:border-emeraldAccent-400 transition">
+                <option value="general">Where Needed Most</option>
+                <option value="education">Child Education & School Kits</option>
+                <option value="healthcare">Free Healthcare & Medicines</option>
+                <option value="relief">Emergency Hunger & Rations</option>
+                <option value="women">Women Vocational Skills</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Real-Time Impact Metric Calculator -->
+          <div class="p-4 rounded-2xl bg-emeraldAccent-500/10 border border-emeraldAccent-500/20 mb-8 flex items-start gap-3">
+            <i data-lucide="sparkles" class="w-5 h-5 text-emeraldAccent-400 shrink-0 mt-0.5"></i>
+            <div>
+              <p class="text-xs font-bold uppercase tracking-wider text-emeraldAccent-300">Your Tangible Impact</p>
+              <p id="donation-impact-text" class="text-xs text-slate-200 mt-1">
+                Your donation of ₹1,000 provides complete school bags, textbooks, and stationery for 2 underprivileged children for a full semester.
+              </p>
+            </div>
+          </div>
+
+          <!-- Proceed to Support CTA -->
+          <button onclick="openPaymentModal()" class="w-full py-4 rounded-xl bg-gradient-to-r from-gold-500 to-amber-500 hover:from-gold-400 hover:to-amber-400 text-midnight-950 font-black text-sm uppercase tracking-wider shadow-xl shadow-gold-500/20 btn-3d flex items-center justify-center gap-2">
+            <i data-lucide="shield-check" class="w-4 h-4"></i>
+            <span>Proceed to Give Securely via UPI / Bank Transfer</span>
+          </button>
+
+          <p class="text-[11px] text-slate-400 text-center mt-4">
+            Official receipt with Trust registration reference issued for every contribution.
+          </p>
+        </div>
+
+        <!-- Right Column: Transparency, Bank Info & Tax Deductions -->
+        <div class="lg:col-span-5 space-y-6">
+          <div class="glass-dark rounded-3xl p-6 sm:p-8 border border-white/10">
+            <h3 class="text-lg font-bold font-display text-white mb-4 flex items-center gap-2">
+              <i data-lucide="landmark" class="w-5 h-5 text-gold-400"></i>
+              <span>Direct Bank & UPI Information</span>
+            </h3>
+            <p class="text-xs text-slate-300 mb-4">You can transfer directly to the official Trust account using NEFT / IMPS or any UPI application:</p>
+            <div class="space-y-2.5 text-xs font-mono bg-midnight-900/80 p-4 rounded-2xl border border-white/10">
+              <div class="flex justify-between py-1 border-b border-white/5">
+                <span class="text-slate-400 font-sans">Account Name:</span>
+                <span class="text-emeraldAccent-300 font-bold">Kalyani Charitable Trust</span>
+              </div>
+              <div class="flex justify-between py-1 border-b border-white/5">
+                <span class="text-slate-400 font-sans">Bank:</span>
+                <span class="text-white">State Bank of India</span>
+              </div>
+              <div class="flex justify-between py-1 border-b border-white/5">
+                <span class="text-slate-400 font-sans">Account No:</span>
+                <span class="text-gold-300 font-bold">Verified Account Placeholder</span>
+              </div>
+              <div class="flex justify-between py-1 border-b border-white/5">
+                <span class="text-slate-400 font-sans">IFSC Code:</span>
+                <span class="text-white">SBIN000000 (Cuttack Main)</span>
+              </div>
+              <div class="flex justify-between py-1">
+                <span class="text-slate-400 font-sans">UPI ID:</span>
+                <span class="text-teal-300 font-bold">kalyanitrust@upi</span>
+              </div>
+            </div>
+            <p class="text-[10px] text-slate-400 mt-3 italic">* For confirmation and 80G receipt, kindly send the transaction screenshot to 8277754614 on WhatsApp.</p>
+          </div>
+
+          <!-- Transparency Accordion -->
+          <div class="glass-dark rounded-3xl p-6 sm:p-8 border border-white/10">
+            <h4 class="text-base font-bold text-white mb-3">Our Transparency Guarantee</h4>
+            <ul class="space-y-3 text-xs text-slate-300">
+              <li class="flex items-start gap-2.5">
+                <i data-lucide="check" class="w-4 h-4 text-emeraldAccent-400 shrink-0 mt-0.5"></i>
+                <span>Every single rupee is accounted for with registered financial audits.</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i data-lucide="check" class="w-4 h-4 text-emeraldAccent-400 shrink-0 mt-0.5"></i>
+                <span>Periodic photo and video impact updates sent directly to donors.</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i data-lucide="check" class="w-4 h-4 text-emeraldAccent-400 shrink-0 mt-0.5"></i>
+                <span>Zero administrative lavishness—focus on maximum on-ground delivery.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== PAGE 07: STORIES & REVIEWS ==================== -->
+    <section id="stories" class="py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-t border-white/10">
+      
+      <!-- Section 1: Community Stories -->
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-xs uppercase font-extrabold tracking-widest text-emeraldAccent-400 bg-emeraldAccent-500/10 px-4 py-1.5 rounded-full border border-emeraldAccent-500/20">
+          Page 07 • Real Lives, Real Dignity
+        </span>
+        <h2 class="text-3xl sm:text-5xl font-extrabold font-display text-white mt-4 tracking-tight">
+          Voices of Hope From The Ground
+        </h2>
+        <p class="text-slate-300 mt-4 text-base sm:text-lg">
+          Behind every statistic is a human heartbeat, a resilient family, and a future illuminated.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-24">
+        
+        <!-- Story Card 1 -->
+        <div class="glass-dark rounded-3xl overflow-hidden border border-white/10 glass-card flex flex-col">
+          <div class="relative h-60">
+            <img src="https://images.unsplash.com/photo-1544717302-de2939b7ef71?q=80&w=800&auto=format&fit=crop" alt="Priya studying in the evening class" class="w-full h-full object-cover" />
+            <div class="absolute inset-0 bg-gradient-to-t from-midnight-950 via-transparent to-transparent"></div>
+            <span class="absolute bottom-4 left-4 bg-emeraldAccent-600/90 text-white text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-full">Education Story</span>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="text-lg font-bold font-display text-white">"I Dream of Becoming a Teacher"</h3>
+              <p class="text-xs text-slate-300 mt-2 leading-relaxed">
+                Priya's parents are daily-wage brick workers who struggled to afford notebooks. Through Kalyani Trust's evening tutoring and kit support, Priya secured first-division marks in class 8.
+              </p>
+            </div>
+            <button onclick="openStoryModal('priya')" class="mt-4 text-xs font-bold text-emeraldAccent-400 hover:text-emeraldAccent-300 flex items-center gap-1">
+              Read Full Story <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Story Card 2 -->
+        <div class="glass-dark rounded-3xl overflow-hidden border border-white/10 glass-card flex flex-col">
+          <div class="relative h-60">
+            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=800&auto=format&fit=crop" alt="Sunita in her tailoring workshop" class="w-full h-full object-cover" />
+            <div class="absolute inset-0 bg-gradient-to-t from-midnight-950 via-transparent to-transparent"></div>
+            <span class="absolute bottom-4 left-4 bg-gold-600/90 text-white text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-full">Livelihood Story</span>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="text-lg font-bold font-display text-white">Sunita's Independence Journey</h3>
+              <p class="text-xs text-slate-300 mt-2 leading-relaxed">
+                After joining our 3-month tailoring and apparel course, Sunita now operates her own sewing micro-unit in Rajendra Nagar, earning sufficient income to independently support her elderly mother.
+              </p>
+            </div>
+            <button onclick="openStoryModal('sunita')" class="mt-4 text-xs font-bold text-gold-400 hover:text-gold-300 flex items-center gap-1">
+              Read Full Story <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Story Card 3 -->
+        <div class="glass-dark rounded-3xl overflow-hidden border border-white/10 glass-card flex flex-col">
+          <div class="relative h-60">
+            <img src="https://images.unsplash.com/photo-1516307365426-bea591f05011?q=80&w=800&auto=format&fit=crop" alt="Grandfather receiving medicine" class="w-full h-full object-cover" />
+            <div class="absolute inset-0 bg-gradient-to-t from-midnight-950 via-transparent to-transparent"></div>
+            <span class="absolute bottom-4 left-4 bg-teal-600/90 text-white text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-full">Healthcare Story</span>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="text-lg font-bold font-display text-white">Vision Restored for Ramesh Babu</h3>
+              <p class="text-xs text-slate-300 mt-2 leading-relaxed">
+                Suffering from advanced cataracts and unable to step out of his hut, 72-year-old Ramesh was screened at our mobile diagnostic camp and received free restorative surgery.
+              </p>
+            </div>
+            <button onclick="openStoryModal('ramesh')" class="mt-4 text-xs font-bold text-teal-400 hover:text-teal-300 flex items-center gap-1">
+              Read Full Story <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Section 2: Continuous Scrolling Reviews Carousel -->
+      <div class="mb-10 text-center">
+        <span class="text-xs uppercase font-extrabold tracking-widest text-gold-400">Authentic Testimonials</span>
+        <h3 class="text-2xl sm:text-3xl font-bold font-display text-white mt-2">What Citizens & Supporters Say</h3>
+        <p class="text-xs text-slate-400 mt-1">Real community feedback and impressions.</p>
+      </div>
+
+      <!-- Continuous Horizontal Auto-scrolling Reviews Track -->
+      <div class="relative overflow-hidden py-4 -mx-4 sm:-mx-6 lg:-mx-8">
+        <div class="reviews-track flex gap-6 px-4">
+          
+          <!-- Review Card 1 -->
+          <div class="w-80 sm:w-96 glass-dark rounded-2xl p-6 border border-white/10 shrink-0">
+            <div class="flex items-center gap-1 text-gold-400 mb-3">
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+            </div>
+            <p class="text-xs text-slate-200 italic leading-relaxed">
+              "Kalyani Charitable Trust is genuine and hardworking. Their volunteers are always visible on the ground during festivals and flood relief. Respect to their commitment!"
+            </p>
+            <div class="mt-4 pt-3 border-t border-white/10 flex justify-between items-center text-xs">
+              <span class="font-bold text-white">Debashish Nayak</span>
+              <span class="text-slate-400">Cuttack Resident</span>
+            </div>
+          </div>
+
+          <!-- Review Card 2 -->
+          <div class="w-80 sm:w-96 glass-dark rounded-2xl p-6 border border-white/10 shrink-0">
+            <div class="flex items-center gap-1 text-gold-400 mb-3">
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+            </div>
+            <p class="text-xs text-slate-200 italic leading-relaxed">
+              "We partnered with them for our corporate health camp. The level of coordination, doctor engagement, and transparent reporting was commendable."
+            </p>
+            <div class="mt-4 pt-3 border-t border-white/10 flex justify-between items-center text-xs">
+              <span class="font-bold text-white">Ananya Rath</span>
+              <span class="text-slate-400">CSR Partner</span>
+            </div>
+          </div>
+
+          <!-- Review Card 3 -->
+          <div class="w-80 sm:w-96 glass-dark rounded-2xl p-6 border border-white/10 shrink-0">
+            <div class="flex items-center gap-1 text-gold-400 mb-3">
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+            </div>
+            <p class="text-xs text-slate-200 italic leading-relaxed">
+              "Volunteering with the weekend remedial teaching programme has been the most enriching experience of my life. Seeing children smile with new books is priceless."
+            </p>
+            <div class="mt-4 pt-3 border-t border-white/10 flex justify-between items-center text-xs">
+              <span class="font-bold text-white">Soumya Ranjan Das</span>
+              <span class="text-slate-400">Youth Volunteer</span>
+            </div>
+          </div>
+
+          <!-- Review Card 4 -->
+          <div class="w-80 sm:w-96 glass-dark rounded-2xl p-6 border border-white/10 shrink-0">
+            <div class="flex items-center gap-1 text-gold-400 mb-3">
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+            </div>
+            <p class="text-xs text-slate-200 italic leading-relaxed">
+              "Transparent charity is rare nowadays. Kalyani Trust shows exactly where help is delivered with full respect to the beneficiaries. Keep shining!"
+            </p>
+            <div class="mt-4 pt-3 border-t border-white/10 flex justify-between items-center text-xs">
+              <span class="font-bold text-white">Manaswini Tripathy</span>
+              <span class="text-slate-400">Regular Supporter</span>
+            </div>
+          </div>
+
+          <!-- Clone for seamless loop -->
+          <div class="w-80 sm:w-96 glass-dark rounded-2xl p-6 border border-white/10 shrink-0">
+            <div class="flex items-center gap-1 text-gold-400 mb-3">
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+            </div>
+            <p class="text-xs text-slate-200 italic leading-relaxed">
+              "Kalyani Charitable Trust is genuine and hardworking. Their volunteers are always visible on the ground during festivals and flood relief. Respect to their commitment!"
+            </p>
+            <div class="mt-4 pt-3 border-t border-white/10 flex justify-between items-center text-xs">
+              <span class="font-bold text-white">Debashish Nayak</span>
+              <span class="text-slate-400">Cuttack Resident</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- MANDATORY REQUIREMENT: READ ALL REVIEWS IN GOOGLE MAP STYLISH 3D ANIMATED BUTTON -->
+      <div class="mt-12 text-center">
+        <a href="https://www.google.com/maps/place/Kalyani+Charitable+Trust/@20.4514953,85.7589665,12z/data=!4m12!1m2!2m1!1sKALYANI+NAGAR+NGO+CUTTACK!3m8!1s0x3a190ded65b16ec5:0xddb560e22ac9af10!8m2!3d20.4514953!4d85.9031621!9m1!1b1!15sChlLQUxZQU5JIE5BR0FSIE5HTyBDVVRUQUNLkgEHY2hhcml0eeABAA!16s%2Fg%2F11v3j0t7v_?entry=ttu&g_ep=EgoyMDI2MDkyMy4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-3 px-8 py-4 rounded-2xl bg-gradient-to-r from-emeraldAccent-500 via-teal-500 to-gold-500 hover:from-emeraldAccent-400 hover:to-gold-400 text-midnight-950 font-black text-sm uppercase tracking-wider shadow-2xl shadow-emeraldAccent-500/30 btn-3d light-sweep-container transform hover:scale-105 transition-all duration-300">
+          <i data-lucide="star" class="w-5 h-5 fill-current text-midnight-950"></i>
+          <span>READ ALL REVIEWS IN GOOGLE MAP</span>
+          <i data-lucide="external-link" class="w-4 h-4 text-midnight-950"></i>
+        </a>
+      </div>
+
+    </section>
+
+    <!-- ==================== PAGE 08: 3D ROTATING GALLERY ==================== -->
+    <section id="gallery" class="py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-t border-white/10">
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <span class="text-xs uppercase font-extrabold tracking-widest text-emeraldAccent-400 bg-emeraldAccent-500/10 px-4 py-1.5 rounded-full border border-emeraldAccent-500/20">
+          Page 08 • Visual Chronicles
+        </span>
+        <h2 class="text-3xl sm:text-5xl font-extrabold font-display text-white mt-4 tracking-tight">
+          3D Interactive Photo Experience
+        </h2>
+        <p class="text-slate-300 mt-4 text-base sm:text-lg">
+          Explore our real field moments in continuous 3D rotation. Drag or swipe horizontally to rotate, or click any photo to expand into crystal-clear view.
+        </p>
+
+        <!-- Category Filter Tabs -->
+        <div class="flex flex-wrap justify-center gap-2 mt-8">
+          <button onclick="filterGallery('ALL', this)" class="gallery-cat-btn px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider bg-emeraldAccent-500 text-white shadow">ALL</button>
+          <button onclick="filterGallery('COMMUNITY', this)" class="gallery-cat-btn px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider bg-white/5 hover:bg-white/15 text-slate-300">COMMUNITY</button>
+          <button onclick="filterGallery('EDUCATION', this)" class="gallery-cat-btn px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider bg-white/5 hover:bg-white/15 text-slate-300">EDUCATION</button>
+          <button onclick="filterGallery('HEALTHCARE', this)" class="gallery-cat-btn px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider bg-white/5 hover:bg-white/15 text-slate-300">HEALTHCARE</button>
+          <button onclick="filterGallery('VOLUNTEERS', this)" class="gallery-cat-btn px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider bg-white/5 hover:bg-white/15 text-slate-300">VOLUNTEERS</button>
+        </div>
+      </div>
+
+      <!-- 3D Cylindrical Rotating Carousel Viewport -->
+      <div class="gallery-viewport py-6 cursor-grab active:cursor-grabbing select-none" id="gallery-drag-area">
+        <div class="gallery-carousel" id="cylindrical-carousel">
+          
+          <!-- Slide 1 -->
+          <div class="gallery-slide group" data-category="EDUCATION" onclick="openLightbox('https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=1400', 'Children reading with smiles')">
+            <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=800&auto=format&fit=crop" alt="Education initiative" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+            <div class="absolute inset-0 bg-gradient-to-t from-midnight-950 via-transparent to-transparent opacity-80"></div>
+            <div class="absolute bottom-4 left-4 right-4">
+              <span class="text-[10px] uppercase font-bold text-emeraldAccent-400">Education</span>
+              <p class="text-xs font-bold text-white">Smiles & School Books</p>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="gallery-slide group" data-category="HEALTHCARE" onclick="openLightbox('https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?q=80&w=1400', 'Free Community Health Camp')">
+            <img src="https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?q=80&w=800&auto=format&fit=crop" alt="Health checkup camp" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+            <div class="absolute inset-0 bg-gradient-to-t from-midnight-950 via-transparent to-transparent opacity-80"></div>
+            <div class="absolute bottom-4 left-4 right-4">
+              <span class="text-[10px] uppercase font-bold text-teal-400">Healthcare</span>
+              <p class="text-xs font-bold text-white">Diagnostic Camp in Cuttack</p>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="gallery-slide group" data-category="COMMUNITY" onclick="openLightbox('https://images.unsplash.com/photo-1593113598332-cd288d649433?q=80&w=1400', 'Food Relief Distribution')">
+            <img src="https://images.unsplash.com/photo-1593113598332-cd288d649433?q=80&w=800&auto=format&fit=crop" alt="Food relief distribution" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+            <div class="absolute inset-0 bg-gradient-to-t from-midnight-950 via-transparent to-transparent opacity-80"></div>
+            <div class="absolute bottom-4 left-4 right-4">
+              <span class="text-[10px] uppercase font-bold text-amber-400">Relief</span>
+              <p class="text-xs font-bold text-white">Rations & Meal Distribution</p>
+            </div>
+          </div>
+
+          <!-- Slide 4 -->
+          <div class="gallery-slide group" data-category="VOLUNTEERS" onclick="openLightbox('https://images.unsplash.com/photo-1559027615-cd4628902d4a?q=80&w=1400', 'Volunteers Hands Joined')">
+            <img src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?q=80&w=800&auto=format&fit=crop" alt="Volunteers joining hands" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+            <div class="absolute inset-0 bg-gradient-to-t from-midnight-950 via-transparent to-transparent opacity-80"></div>
+            <div class="absolute bottom-4 left-4 right-4">
+              <span class="text-[10px] uppercase font-bold text-gold-400">Volunteers</span>
+              <p class="text-xs font-bold text-white">Unity in Grassroots Action</p>
+            </div>
+          </div>
+
+          <!-- Slide 5 -->
+          <div class="gallery-slide group" data-category="COMMUNITY" onclick="openLightbox('https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1400', 'Women Skill Training')">
+            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=800&auto=format&fit=crop" alt="Women skill training" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+            <div class="absolute inset-0 bg-gradient-to-t from-midnight-950 via-transparent to-transparent opacity-80"></div>
+            <div class="absolute bottom-4 left-4 right-4">
+              <span class="text-[10px] uppercase font-bold text-rose-400">Livelihood</span>
+              <p class="text-xs font-bold text-white">Vocational Self-Reliance</p>
+            </div>
+          </div>
+
+          <!-- Slide 6 -->
+          <div class="gallery-slide group" data-category="COMMUNITY" onclick="openLightbox('https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?q=80&w=1400', 'Tree Plantation Drive')">
+            <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?q=80&w=800&auto=format&fit=crop" alt="Tree plantation" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+            <div class="absolute inset-0 bg-gradient-to-t from-midnight-950 via-transparent to-transparent opacity-80"></div>
+            <div class="absolute bottom-4 left-4 right-4">
+              <span class="text-[10px] uppercase font-bold text-emeraldAccent-400">Environment</span>
+              <p class="text-xs font-bold text-white">Clean Earth Plantation</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Carousel Navigation Controls & Hint -->
+      <div class="flex items-center justify-center gap-4 mt-6">
+        <button onclick="rotateCarousel(-1)" aria-label="Rotate Left" class="p-3 rounded-full bg-white/5 hover:bg-white/15 border border-white/10 text-white transition">
+          <i data-lucide="chevron-left" class="w-5 h-5"></i>
+        </button>
+        <span class="text-xs text-slate-400 font-mono">Drag or use arrows to spin</span>
+        <button onclick="rotateCarousel(1)" aria-label="Rotate Right" class="p-3 rounded-full bg-white/5 hover:bg-white/15 border border-white/10 text-white transition">
+          <i data-lucide="chevron-right" class="w-5 h-5"></i>
+        </button>
+      </div>
+
+      <!-- MANDATORY REQUIREMENT: OPEN FULL GOOGLE PHOTOS GALLERY STYLISH 3D BUTTON -->
+      <div class="mt-14 text-center">
+        <a href="https://www.google.com/maps/place/Kalyani+Charitable+Trust/@20.4515228,85.9030899,3a,75y,90t/data=!3m8!1e2!3m6!1sCIABIhAGbzzgQAQnAmfDAGoACWh1!2e10!3e12!6shttps:%2F%2Flh3.googleusercontent.com%2Fgps-cs-s%2FANWiy9Qq973lt37AYgbwymOC5XnJ15t4wdZl4hXFJQ0w_Pi2L3rZlpCYGhRlHlLSaiSYIciuntx22fHdcsguIE93GnYPHAtoIqm7FRZAl8-mh1DJ885B0ra4kkjSUHrAX65WPPkHIaXc6fi08d0_%3Dw203-h152-k-no!7i1600!8i1200!4m11!1m2!2m1!1sKALYANI+NAGAR+NGO+CUTTACK!3m7!1s0x3a190ded65b16ec5:0xddb560e22ac9af10!8m2!3d20.4514953!4d85.9031621!10e5!15sChlLQUxZQU5JIE5BR0FSIE5HTyBDVVRUQUNLkgEHY2hhcml0eeABAA!16s%2Fg%2F11v3j0t7v_?entry=ttu&g_ep=EgoyMDI2MDkyMy4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-3 px-8 py-4 rounded-2xl bg-gradient-to-r from-emeraldAccent-500 via-teal-500 to-gold-500 hover:from-emeraldAccent-400 hover:to-gold-400 text-midnight-950 font-black text-sm uppercase tracking-wider shadow-2xl shadow-emeraldAccent-500/30 btn-3d light-sweep-container transform hover:scale-105 transition-all duration-300">
+          <i data-lucide="image" class="w-5 h-5 text-midnight-950"></i>
+          <span>OPEN FULL GOOGLE PHOTOS GALLERY</span>
+          <i data-lucide="external-link" class="w-4 h-4 text-midnight-950"></i>
+        </a>
+      </div>
+
+    </section>
+
+    <!-- ==================== PAGE 09: RESOURCES / NEWS ==================== -->
+    <section id="resources" class="py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-t border-white/10">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-xs uppercase font-extrabold tracking-widest text-teal-400 bg-teal-400/10 px-4 py-1.5 rounded-full border border-teal-400/20">
+          Page 09 • Knowledge & Updates
+        </span>
+        <h2 class="text-3xl sm:text-5xl font-extrabold font-display text-white mt-4 tracking-tight">
+          News, Community Dispatch & Reports
+        </h2>
+        <p class="text-slate-300 mt-4 text-base sm:text-lg">
+          Stay informed about our upcoming health camps, educational drives, field findings, and official trust disclosures.
+        </p>
+      </div>
+
+      <!-- Featured Story / Article -->
+      <div class="glass-dark rounded-3xl overflow-hidden border border-white/10 mb-12 light-sweep-container shadow-2xl">
+        <div class="grid grid-cols-1 lg:grid-cols-12">
+          <div class="lg:col-span-6 relative h-64 sm:h-80 lg:h-auto min-h-[300px]">
+            <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?q=80&w=1200&auto=format&fit=crop" alt="Students in evening tutorial center" class="w-full h-full object-cover" />
+            <div class="absolute inset-0 bg-gradient-to-t lg:bg-gradient-to-r from-midnight-950/80 via-transparent to-transparent"></div>
+            <span class="absolute top-4 left-4 bg-emeraldAccent-600 text-white text-[11px] font-bold uppercase tracking-wider px-3.5 py-1.5 rounded-full shadow">Featured Dispatch</span>
+          </div>
+          <div class="lg:col-span-6 p-8 sm:p-10 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center gap-3 text-xs text-slate-400 font-mono mb-2">
+                <span>Field Bulletin</span>
+                <span>•</span>
+                <span>Cuttack District Outreach</span>
+              </div>
+              <h3 class="text-2xl font-bold font-display text-white mb-3">Expanding Evening Bridge Classrooms Across Rural Cuttack</h3>
+              <p class="text-sm text-slate-300 leading-relaxed">
+                Rural children often bear domestic labor or farm chores after school hours, falling behind in core mathematics and language skills. Our latest initiative establishes 5 community-led study hubs staffed by enthusiastic university youth volunteers.
+              </p>
+            </div>
+            <div class="mt-6 pt-6 border-t border-white/10 flex items-center justify-between">
+              <span class="text-xs text-emeraldAccent-400 font-semibold">Focus: Remedial Education</span>
+              <button onclick="openResourceModal('bridge-schools')" class="text-xs font-bold text-white hover:text-emeraldAccent-300 flex items-center gap-1.5 uppercase tracking-wider">
+                Read Publication <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Articles & Download Center Grid -->
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
+        
+        <!-- Article 1 -->
+        <div class="glass-dark rounded-3xl p-6 border border-white/10 flex flex-col justify-between">
+          <div>
+            <span class="text-[10px] font-bold uppercase tracking-wider text-teal-400 bg-teal-400/10 px-2.5 py-1 rounded-full">Health Report</span>
+            <h4 class="text-base font-bold text-white mt-3">Preventive Eye Screenings in Slum Clusters</h4>
+            <p class="text-xs text-slate-300 mt-2 leading-relaxed">Key findings from our recent medical camp: why early refractive correction improves child school retention by 35%.</p>
+          </div>
+          <button onclick="openResourceModal('eye-screenings')" class="mt-4 text-xs font-semibold text-teal-300 hover:text-teal-200 flex items-center gap-1">
+            Read Briefing <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+          </button>
+        </div>
+
+        <!-- Article 2 -->
+        <div class="glass-dark rounded-3xl p-6 border border-white/10 flex flex-col justify-between">
+          <div>
+            <span class="text-[10px] font-bold uppercase tracking-wider text-gold-400 bg-gold-400/10 px-2.5 py-1 rounded-full">Disaster Preparedness</span>
+            <h4 class="text-base font-bold text-white mt-3">Flood Season Community Protocols</h4>
+            <p class="text-xs text-slate-300 mt-2 leading-relaxed">Community readiness guidelines, water purification best practices, and emergency shelter coordination protocols.</p>
+          </div>
+          <button onclick="openResourceModal('flood-prep')" class="mt-4 text-xs font-semibold text-gold-300 hover:text-gold-200 flex items-center gap-1">
+            Read Briefing <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+          </button>
+        </div>
+
+        <!-- Download Center Card -->
+        <div class="glass-dark rounded-3xl p-6 border border-white/10 bg-gradient-to-br from-emeraldAccent-950/40 to-midnight-900 flex flex-col justify-between">
+          <div>
+            <div class="w-10 h-10 rounded-xl bg-emeraldAccent-500/20 text-emeraldAccent-400 flex items-center justify-center mb-3">
+              <i data-lucide="file-text" class="w-5 h-5"></i>
+            </div>
+            <h4 class="text-base font-bold text-white">Trust Documents & Reports</h4>
+            <p class="text-xs text-slate-300 mt-1 leading-relaxed">Official transparency files available for verified download:</p>
+            <div class="mt-3 space-y-2 text-xs">
+              <a href="#" onclick="alert('Annual Report file is an editable placeholder. Connect your verified PDF in NGO_CONFIG.'); return false;" class="flex items-center justify-between p-2 rounded-lg bg-white/5 hover:bg-white/10 text-slate-200 transition">
+                <span>Annual Impact Overview.pdf</span>
+                <i data-lucide="download" class="w-3.5 h-3.5 text-emeraldAccent-400"></i>
+              </a>
+              <a href="#" onclick="alert('Trust Deed document is an editable placeholder. Connect your verified PDF in NGO_CONFIG.'); return false;" class="flex items-center justify-between p-2 rounded-lg bg-white/5 hover:bg-white/10 text-slate-200 transition">
+                <span>Trust Registration & 80G.pdf</span>
+                <i data-lucide="download" class="w-3.5 h-3.5 text-emeraldAccent-400"></i>
+              </a>
+            </div>
+          </div>
+          <span class="text-[10px] text-slate-400 mt-4">* Public records under Trust Transparency Bylaws</span>
+        </div>
+
+      </div>
+
+      <!-- Newsletter Box -->
+      <div class="max-w-2xl mx-auto rounded-3xl glass-dark border border-white/15 p-6 sm:p-8 text-center light-sweep-container">
+        <h4 class="text-lg font-bold font-display text-white">Subscribe to Monthly Impact Updates</h4>
+        <p class="text-xs text-slate-300 mt-1 mb-4">No spam. Only authentic reports of lives transformed and invitation to upcoming drives.</p>
+        <form onsubmit="handleNewsletterSubmit(event)" class="flex flex-col sm:flex-row gap-3">
+          <input type="email" id="news-email" required placeholder="Enter your email address" class="flex-1 px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-slate-500 focus:outline-none focus:border-emeraldAccent-400 text-xs transition" />
+          <button type="submit" class="px-6 py-3 rounded-xl bg-emeraldAccent-600 hover:bg-emeraldAccent-500 text-white font-bold text-xs uppercase tracking-wider btn-3d">
+            Subscribe
+          </button>
+        </form>
+        <div id="newsletter-success" class="hidden text-xs text-emeraldAccent-400 font-bold mt-3">
+          ✓ Subscribed successfully! Thank you for staying connected.
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== PREMIUM FAQ SECTION ==================== -->
+    <section class="py-20 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto border-t border-white/10">
+      <div class="text-center mb-12">
+        <span class="text-xs uppercase font-extrabold tracking-widest text-gold-400">Common Enquiries</span>
+        <h3 class="text-2xl sm:text-3xl font-bold font-display text-white mt-2">Frequently Asked Questions</h3>
+        <p class="text-xs text-slate-400 mt-1">Clear answers regarding our work, contributions, and volunteer engagements.</p>
+      </div>
+
+      <div class="space-y-4">
+        <!-- FAQ 1 -->
+        <div class="glass-dark rounded-2xl border border-white/10 overflow-hidden">
+          <button onclick="toggleFaq(1)" class="w-full px-6 py-4 text-left flex justify-between items-center text-sm font-bold text-white hover:text-emeraldAccent-400 transition">
+            <span>What does Kalyani Charitable Trust do?</span>
+            <i data-lucide="chevron-down" id="faq-icon-1" class="w-4 h-4 text-slate-400 transition-transform duration-300"></i>
+          </button>
+          <div id="faq-ans-1" class="hidden px-6 pb-4 text-xs text-slate-300 leading-relaxed border-t border-white/5 pt-3">
+            Kalyani Charitable Trust is a registered non-profit organization located in Cuttack, Odisha. We provide grassroots support through remedial evening education for underprivileged children, free community healthcare camps, women's self-reliance vocational programs, and prompt disaster ration distribution.
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="glass-dark rounded-2xl border border-white/10 overflow-hidden">
+          <button onclick="toggleFaq(2)" class="w-full px-6 py-4 text-left flex justify-between items-center text-sm font-bold text-white hover:text-emeraldAccent-400 transition">
+            <span>How can I volunteer with the Trust?</span>
+            <i data-lucide="chevron-down" id="faq-icon-2" class="w-4 h-4 text-slate-400 transition-transform duration-300"></i>
+          </button>
+          <div id="faq-ans-2" class="hidden px-6 pb-4 text-xs text-slate-300 leading-relaxed border-t border-white/5 pt-3">
+            You can volunteer in teaching, organizing health camps, relief distribution, or digital media. Simply fill out our Volunteer Enrollment Form on the "Get Involved" page or reach out directly to us on WhatsApp at 8277754614.
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="glass-dark rounded-2xl border border-white/10 overflow-hidden">
+          <button onclick="toggleFaq(3)" class="w-full px-6 py-4 text-left flex justify-between items-center text-sm font-bold text-white hover:text-emeraldAccent-400 transition">
+            <span>Are my donations tax deductible under 80G?</span>
+            <i data-lucide="chevron-down" id="faq-icon-3" class="w-4 h-4 text-slate-400 transition-transform duration-300"></i>
+          </button>
+          <div id="faq-ans-3" class="hidden px-6 pb-4 text-xs text-slate-300 leading-relaxed border-t border-white/5 pt-3">
+            Yes, donations to registered trusts meeting statutory norms receive tax exemption receipts. We issue formal acknowledgement certificates with registration details upon receipt of bank or UPI payment confirmation.
+          </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="glass-dark rounded-2xl border border-white/10 overflow-hidden">
+          <button onclick="toggleFaq(4)" class="w-full px-6 py-4 text-left flex justify-between items-center text-sm font-bold text-white hover:text-emeraldAccent-400 transition">
+            <span>Where is the organization physically located?</span>
+            <i data-lucide="chevron-down" id="faq-icon-4" class="w-4 h-4 text-slate-400 transition-transform duration-300"></i>
+          </button>
+          <div id="faq-ans-4" class="hidden px-6 pb-4 text-xs text-slate-300 leading-relaxed border-t border-white/5 pt-3">
+            Our central office is located at Kalyani Nagar, Rajendra Nagar, Kataka (Cuttack), Odisha 753013. You can find our verified Google Maps listing and get driving directions directly on the Contact page.
+          </div>
+        </div>
+
+        <!-- FAQ 5 -->
+        <div class="glass-dark rounded-2xl border border-white/10 overflow-hidden">
+          <button onclick="toggleFaq(5)" class="w-full px-6 py-4 text-left flex justify-between items-center text-sm font-bold text-white hover:text-emeraldAccent-400 transition">
+            <span>Can corporate entities partner with Kalyani Trust for CSR?</span>
+            <i data-lucide="chevron-down" id="faq-icon-5" class="w-4 h-4 text-slate-400 transition-transform duration-300"></i>
+          </button>
+          <div id="faq-ans-5" class="hidden px-6 pb-4 text-xs text-slate-300 leading-relaxed border-t border-white/5 pt-3">
+            Yes! We collaborate with corporate organizations, colleges, and medical establishments for focused CSR initiatives, providing comprehensive audited impact reports, photo documentation, and community testimonials.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== PAGE 10: CONTACT & GOOGLE MAPS ==================== -->
+    <section id="contact" class="py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-t border-white/10">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-xs uppercase font-extrabold tracking-widest text-emeraldAccent-400 bg-emeraldAccent-500/10 px-4 py-1.5 rounded-full border border-emeraldAccent-500/20">
+          Page 10 • Connect With Us
+        </span>
+        <h2 class="text-3xl sm:text-5xl font-extrabold font-display text-white mt-4 tracking-tight">
+          We Are Here For The Community
+        </h2>
+        <p class="text-slate-300 mt-4 text-base sm:text-lg">
+          Reach out for inquiries, partnerships, volunteering, or emergency assistance. Our team is available through call, WhatsApp, and in person.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
+        
+        <!-- Left 5 Cols: Contact Channels -->
+        <div class="lg:col-span-5 space-y-6">
+          
+          <!-- Phone Card -->
+          <div class="glass-dark rounded-3xl p-6 border border-white/10 light-sweep-container">
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 rounded-2xl bg-emeraldAccent-500/20 text-emeraldAccent-400 flex items-center justify-center shrink-0">
+                <i data-lucide="phone-call" class="w-6 h-6"></i>
+              </div>
+              <div class="flex-1">
+                <span class="text-[11px] font-mono uppercase text-slate-400 font-semibold">Direct Phone</span>
+                <p class="text-lg font-bold font-display text-white mt-0.5">8277754614</p>
+              </div>
+            </div>
+            <a href="tel:+918277754614" class="mt-4 w-full py-2.5 rounded-xl bg-emeraldAccent-600/80 hover:bg-emeraldAccent-500 text-white font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-2 btn-3d">
+              <i data-lucide="phone" class="w-3.5 h-3.5"></i> Call Now (+91 8277754614)
+            </a>
+          </div>
+
+          <!-- WhatsApp Card -->
+          <div class="glass-dark rounded-3xl p-6 border border-white/10 light-sweep-container">
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 rounded-2xl bg-teal-500/20 text-teal-400 flex items-center justify-center shrink-0">
+                <i data-lucide="message-circle" class="w-6 h-6"></i>
+              </div>
+              <div class="flex-1">
+                <span class="text-[11px] font-mono uppercase text-slate-400 font-semibold">WhatsApp Support</span>
+                <p class="text-lg font-bold font-display text-white mt-0.5">8277754614</p>
+              </div>
+            </div>
+            <a href="https://wa.me/918277754614?text=Hello%20Kalyani%20Charitable%20Trust%2C%20I%20would%20like%20to%20know%20more%20about%20your%20work%20and%20how%20I%20can%20support%20your%20mission." target="_blank" rel="noopener noreferrer" class="mt-4 w-full py-2.5 rounded-xl bg-teal-600/80 hover:bg-teal-500 text-white font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-2 btn-3d">
+              <i data-lucide="message-square" class="w-3.5 h-3.5"></i> Chat on WhatsApp
+            </a>
+          </div>
+
+          <!-- Location Details -->
+          <div class="glass-dark rounded-3xl p-6 border border-white/10">
+            <div class="flex items-center gap-4 mb-3">
+              <div class="w-12 h-12 rounded-2xl bg-gold-400/20 text-gold-400 flex items-center justify-center shrink-0">
+                <i data-lucide="map-pin" class="w-6 h-6"></i>
+              </div>
+              <div>
+                <span class="text-[11px] font-mono uppercase text-slate-400 font-semibold">Registered Trust Address</span>
+                <h4 class="text-sm font-bold text-white mt-0.5">Kalyani Charitable Trust</h4>
+              </div>
+            </div>
+            <p class="text-xs text-slate-300 leading-relaxed pl-16">
+              Kalyani Nagar, Rajendra Nagar, Kataka (Cuttack), Odisha 753013, India.
+            </p>
+          </div>
+
+          <!-- Social Media Channels -->
+          <div class="glass-dark rounded-3xl p-6 border border-white/10">
+            <span class="text-xs font-semibold uppercase text-slate-400 block mb-3">Follow Our Field Updates</span>
+            <div class="grid grid-cols-4 gap-3">
+              <a href="#" onclick="alert('Facebook link configuration placeholder: Set FACEBOOK_URL in NGO_CONFIG.'); return false;" aria-label="Facebook" class="p-3 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 flex items-center justify-center text-slate-300 hover:text-emeraldAccent-400 transition transform hover:-translate-y-1">
+                <i data-lucide="facebook" class="w-5 h-5"></i>
+              </a>
+              <a href="#" onclick="alert('Twitter link configuration placeholder: Set TWITTER_URL in NGO_CONFIG.'); return false;" aria-label="Twitter" class="p-3 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 flex items-center justify-center text-slate-300 hover:text-emeraldAccent-400 transition transform hover:-translate-y-1">
+                <i data-lucide="twitter" class="w-5 h-5"></i>
+              </a>
+              <a href="#" onclick="alert('Instagram link configuration placeholder: Set INSTAGRAM_URL in NGO_CONFIG.'); return false;" aria-label="Instagram" class="p-3 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 flex items-center justify-center text-slate-300 hover:text-emeraldAccent-400 transition transform hover:-translate-y-1">
+                <i data-lucide="instagram" class="w-5 h-5"></i>
+              </a>
+              <a href="#" onclick="alert('YouTube link configuration placeholder: Set YOUTUBE_URL in NGO_CONFIG.'); return false;" aria-label="YouTube" class="p-3 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 flex items-center justify-center text-slate-300 hover:text-emeraldAccent-400 transition transform hover:-translate-y-1">
+                <i data-lucide="youtube" class="w-5 h-5"></i>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right 7 Cols: Contact Form -->
+        <div class="lg:col-span-7 glass-dark rounded-3xl p-8 sm:p-10 border border-white/15 light-sweep-container shadow-2xl">
+          <h3 class="text-xl font-bold font-display text-white mb-2">Send an Enquiry or Message</h3>
+          <p class="text-xs text-slate-400 mb-6">Our coordinating team responds to every inquiry within 24 hours.</p>
+
+          <form id="contact-form" onsubmit="handleContactSubmit(event)" class="space-y-5">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+              <div>
+                <label for="contact-name" class="block text-xs font-semibold uppercase text-slate-300 mb-1.5">Your Name *</label>
+                <input type="text" id="contact-name" required placeholder="Full name" class="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-slate-500 focus:outline-none focus:border-emeraldAccent-400 text-xs transition" />
+              </div>
+              <div>
+                <label for="contact-phone" class="block text-xs font-semibold uppercase text-slate-300 mb-1.5">Phone Number *</label>
+                <input type="tel" id="contact-phone" required placeholder="8277754614" class="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-slate-500 focus:outline-none focus:border-emeraldAccent-400 text-xs transition" />
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+              <div>
+                <label for="contact-email" class="block text-xs font-semibold uppercase text-slate-300 mb-1.5">Email Address</label>
+                <input type="email" id="contact-email" placeholder="name@example.com" class="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-slate-500 focus:outline-none focus:border-emeraldAccent-400 text-xs transition" />
+              </div>
+              <div>
+                <label for="contact-subject" class="block text-xs font-semibold uppercase text-slate-300 mb-1.5">Subject *</label>
+                <input type="text" id="contact-subject" required placeholder="Volunteering, Donation, General" class="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-slate-500 focus:outline-none focus:border-emeraldAccent-400 text-xs transition" />
+              </div>
+            </div>
+
+            <div>
+              <label for="contact-message" class="block text-xs font-semibold uppercase text-slate-300 mb-1.5">Message / Inquiry *</label>
+              <textarea id="contact-message" required rows="4" placeholder="How can we assist you or how would you like to participate?" class="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-slate-500 focus:outline-none focus:border-emeraldAccent-400 text-xs transition"></textarea>
+            </div>
+
+            <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-emeraldAccent-500 to-emeraldAccent-600 hover:from-emeraldAccent-400 hover:to-emeraldAccent-500 text-white font-extrabold text-sm uppercase tracking-wider shadow-lg shadow-emeraldAccent-500/25 btn-3d flex items-center justify-center gap-2">
+              <i data-lucide="send" class="w-4 h-4"></i>
+              <span>Send Message</span>
+            </button>
+          </form>
+
+          <div id="contact-success" class="hidden mt-6 p-5 rounded-2xl bg-emeraldAccent-500/20 border border-emeraldAccent-400/40 text-center animate-fade-in">
+            <p class="text-sm font-bold text-white">Message Dispatched Successfully!</p>
+            <p class="text-xs text-emeraldAccent-200 mt-1">Thank you. An official representative of Kalyani Charitable Trust will connect with you soon.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- MANDATORY REQUIREMENT: GOOGLE MAP SECTION -->
+      <div class="mt-16 glass-dark rounded-3xl p-6 sm:p-8 border border-white/10 overflow-hidden shadow-2xl">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
+          <div>
+            <span class="text-xs uppercase font-extrabold tracking-widest text-emeraldAccent-400">Location & Presence</span>
+            <h3 class="text-xl sm:text-2xl font-bold font-display text-white mt-1">Visit Us in Cuttack, Odisha</h3>
+            <p class="text-xs text-slate-400">Kalyani Nagar, Rajendra Nagar, Kataka, Odisha 753013</p>
+          </div>
+
+          <!-- MANDATORY SPECIFIC REDIRECT BUTTON -->
+          <a href="https://www.google.com/maps/dir//FW23%2BJ7P+Kalyani+Charitable+Trust,+Kalyani+Nagar,+Rajendra+Nagar,+Kataka,+Odisha+753013/@20.4514953,85.7589665,12z/data=!4m17!1m8!3m7!1s0x3a190ded65b16ec5:0xddb560e22ac9af10!2sKalyani+Charitable+Trust!8m2!3d20.4514953!4d85.9031621!15sChlLQUxZQU5JIE5BR0FSIE5HTyBDVVRUQUNLkgEHY2hhcml0eeABAA!16s%2Fg%2F11v3j0t7v_!4m7!1m0!1m5!1m1!1s0x3a190ded65b16ec5:0xddb560e22ac9af10!2m2!1d85.9031676!2d20.4514933?entry=ttu&g_ep=EgoyMDI2MDkyMy4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2.5 px-6 py-3.5 rounded-xl bg-gradient-to-r from-emeraldAccent-500 to-teal-500 hover:from-emeraldAccent-400 hover:to-teal-400 text-white font-black text-xs uppercase tracking-wider shadow-lg shadow-emeraldAccent-500/25 btn-3d shrink-0">
+            <i data-lucide="navigation" class="w-4 h-4"></i>
+            <span>GET DIRECTIONS ON GOOGLE MAPS</span>
+            <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+          </a>
+        </div>
+
+        <!-- Embedded Interactive Map Iframe -->
+        <div class="w-full h-80 sm:h-96 rounded-2xl overflow-hidden border border-white/10 relative">
+          <iframe 
+            src="https://maps.google.com/maps?q=20.4514953,85.9031621&hl=en&z=16&output=embed" 
+            width="100%" 
+            height="100%" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Kalyani Charitable Trust Location Map"
+            class="filter grayscale-[40%] contrast-[1.1] hover:filter-none transition-all duration-500">
+          </iframe>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ==================== CINEMATIC FULL-WIDTH FOOTER ==================== -->
+    <footer class="relative z-10 border-t border-white/10 bg-midnight-950 py-16 px-4 sm:px-6 lg:px-8 light-sweep-container overflow-hidden">
+      <div class="max-w-7xl mx-auto">
+        
+        <!-- Top Row: Emblem, Trust Info, Quick Links -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 mb-12">
+          
+          <div class="lg:col-span-5">
+            <div class="flex items-center gap-3 mb-4">
+              <div class="w-10 h-10 rounded-xl bg-emeraldAccent-500/20 border border-emeraldAccent-400/40 flex items-center justify-center text-emeraldAccent-400 font-display font-extrabold text-lg">
+                KCT
+              </div>
+              <div>
+                <span class="block text-lg font-bold font-display text-white">Kalyani Charitable Trust</span>
+                <span class="block text-[10px] uppercase tracking-widest text-emeraldAccent-400">Non-Profit Organization • Cuttack</span>
+              </div>
+            </div>
+            <p class="text-xs text-slate-400 leading-relaxed max-w-sm mb-6">
+              Dedicated to uplifting underprivileged children, expanding preventive rural healthcare, empowering women with vocational self-reliance, and standing strong with communities in crisis.
+            </p>
+            <div class="flex items-center gap-3">
+              <a href="tel:+918277754614" class="px-3.5 py-2 rounded-lg bg-white/5 hover:bg-white/10 border border-white/10 text-xs text-slate-300 flex items-center gap-1.5 transition">
+                <i data-lucide="phone" class="w-3.5 h-3.5 text-emeraldAccent-400"></i> +91 8277754614
+              </a>
+              <a href="https://wa.me/918277754614" target="_blank" rel="noopener noreferrer" class="px-3.5 py-2 rounded-lg bg-emeraldAccent-600/30 hover:bg-emeraldAccent-600/50 border border-emeraldAccent-500/30 text-xs text-emeraldAccent-300 flex items-center gap-1.5 transition">
+                <i data-lucide="message-circle" class="w-3.5 h-3.5"></i> WhatsApp
+              </a>
+            </div>
+          </div>
+
+          <div class="lg:col-span-2">
+            <h4 class="text-xs font-bold uppercase tracking-wider text-white mb-4">Navigation</h4>
+            <ul class="space-y-2 text-xs text-slate-400">
+              <li><a href="#home" class="hover:text-emeraldAccent-400 transition">Home</a></li>
+              <li><a href="#about" class="hover:text-emeraldAccent-400 transition">About Us</a></li>
+              <li><a href="#programmes" class="hover:text-emeraldAccent-400 transition">Programmes</a></li>
+              <li><a href="#impact" class="hover:text-emeraldAccent-400 transition">Our Impact</a></li>
+              <li><a href="#gallery" class="hover:text-emeraldAccent-400 transition">3D Gallery</a></li>
+            </ul>
+          </div>
+
+          <div class="lg:col-span-2">
+            <h4 class="text-xs font-bold uppercase tracking-wider text-white mb-4">Participation</h4>
+            <ul class="space-y-2 text-xs text-slate-400">
+              <li><a href="#get-involved" class="hover:text-emeraldAccent-400 transition">Volunteer</a></li>
+              <li><a href="#donate" class="hover:text-emeraldAccent-400 transition">Make a Donation</a></li>
+              <li><a href="#stories" class="hover:text-emeraldAccent-400 transition">Stories & Reviews</a></li>
+              <li><a href="#resources" class="hover:text-emeraldAccent-400 transition">News & Reports</a></li>
+              <li><a href="#contact" class="hover:text-emeraldAccent-400 transition">Contact & Directions</a></li>
+            </ul>
+          </div>
+
+          <div class="lg:col-span-3">
+            <h4 class="text-xs font-bold uppercase tracking-wider text-white mb-4">Verification & Registry</h4>
+            <p class="text-xs text-slate-400 leading-relaxed mb-3">
+              Kalyani Charitable Trust is established under Indian Charitable Trust regulations. Audited accounts and documentation are open to registered contributors.
+            </p>
+            <span class="inline-block text-[11px] font-mono text-emeraldAccent-400 bg-emeraldAccent-500/10 px-3 py-1 rounded-full border border-emeraldAccent-500/20">
+              Kalyani Nagar, Cuttack, Odisha
+            </span>
+          </div>
+
+        </div>
+
+        <!-- Final Animated Statement -->
+        <div class="py-8 border-t border-b border-white/10 text-center">
+          <p class="text-lg sm:text-2xl font-extrabold font-display tracking-wide uppercase text-transparent bg-clip-text bg-gradient-to-r from-emeraldAccent-400 via-gold-400 to-teal-300">
+            "TOGETHER, WE CAN TURN COMPASSION INTO ACTION."
+          </p>
+        </div>
+
+        <!-- Copyright & Bottom Line -->
+        <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
+          <p>© <span id="current-year">2026</span> Kalyani Charitable Trust. All Rights Reserved.</p>
+          <div class="flex items-center space-x-6">
+            <a href="#contact" class="hover:text-slate-400 transition">Privacy & Transparency Policy</a>
+            <a href="#contact" class="hover:text-slate-400 transition">Terms of Stewardship</a>
+            <a href="#home" class="hover:text-slate-400 transition">Back to Top ↑</a>
+          </div>
+        </div>
+
+      </div>
+    </footer>
+
+    <!-- ==================== FLOATING CONTACT ACTION SYSTEM ==================== -->
+    <div class="fixed bottom-6 right-6 z-40 flex flex-col items-end gap-3 pointer-events-auto">
+      
+      <!-- Back to Top Button -->
+      <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})" aria-label="Back to Top" class="w-11 h-11 rounded-full glass-dark border border-white/20 text-slate-300 hover:text-white flex items-center justify-center shadow-lg transition-transform hover:scale-110">
+        <i data-lucide="arrow-up" class="w-5 h-5"></i>
+      </button>
+
+      <!-- Quick Call Button -->
+      <a href="tel:+918277754614" aria-label="Call Kalyani Charitable Trust" class="w-11 h-11 rounded-full bg-midnight-900 border border-emeraldAccent-400/40 text-emeraldAccent-400 hover:text-white hover:bg-emeraldAccent-600 flex items-center justify-center shadow-lg transition-transform hover:scale-110">
+        <i data-lucide="phone" class="w-5 h-5"></i>
+      </a>
+
+      <!-- Quick Donate Floating Button -->
+      <a href="#donate" aria-label="Quick Donate" class="w-11 h-11 rounded-full bg-gold-500 hover:bg-gold-400 text-midnight-950 flex items-center justify-center shadow-lg shadow-gold-500/30 transition-transform hover:scale-110">
+        <i data-lucide="heart" class="w-5 h-5 fill-current"></i>
+      </a>
+
+      <!-- Pulsating WhatsApp Floating Button -->
+      <div class="relative group">
+        <div class="absolute -inset-1 rounded-full bg-emeraldAccent-500/40 blur animate-pulse"></div>
+        <a href="https://wa.me/918277754614?text=Hello%20Kalyani%20Charitable%20Trust%2C%20I%20would%20like%20to%20know%20more%20about%20your%20work%20and%20how%20I%20can%20support%20your%20mission." target="_blank" rel="noopener noreferrer" aria-label="WhatsApp Us" class="relative w-14 h-14 rounded-full bg-emeraldAccent-500 hover:bg-emeraldAccent-400 text-white flex items-center justify-center shadow-2xl shadow-emeraldAccent-500/40 transition-transform hover:scale-105 active:scale-95">
+          <i data-lucide="message-circle" class="w-7 h-7"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- ==================== MODALS & LIGHTBOX CONTAINERS ==================== -->
+    
+    <!-- Lightbox Modal -->
+    <div id="lightbox-modal" class="fixed inset-0 z-50 hidden bg-midnight-950/90 backdrop-blur-md flex items-center justify-center p-4">
+      <div class="relative max-w-4xl w-full bg-midnight-900 rounded-3xl overflow-hidden border border-white/20 shadow-2xl">
+        <button onclick="closeLightbox()" aria-label="Close Lightbox" class="absolute top-4 right-4 z-10 p-2 rounded-full bg-midnight-950/80 text-white hover:text-emeraldAccent-400 transition">
+          <i data-lucide="x" class="w-6 h-6"></i>
+        </button>
+        <img id="lightbox-img" src="" alt="Enlarged view" class="w-full max-h-[75vh] object-contain bg-black" />
+        <div class="p-6">
+          <p id="lightbox-caption" class="text-sm font-bold text-white"></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Generic Detail Modal (Programmes / Stories / Resources) -->
+    <div id="detail-modal" class="fixed inset-0 z-50 hidden bg-midnight-950/90 backdrop-blur-md flex items-center justify-center p-4">
+      <div class="relative max-w-2xl w-full glass-dark rounded-3xl p-8 border border-white/20 shadow-2xl max-h-[85vh] overflow-y-auto">
+        <button onclick="closeDetailModal()" aria-label="Close Modal" class="absolute top-6 right-6 p-2 rounded-full bg-white/10 text-white hover:text-emeraldAccent-400 transition">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+        <div id="detail-modal-body">
+          <!-- Dynamically populated -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Payment / Donation Instructions Modal -->
+    <div id="payment-modal" class="fixed inset-0 z-50 hidden bg-midnight-950/90 backdrop-blur-md flex items-center justify-center p-4">
+      <div class="relative max-w-lg w-full glass-dark rounded-3xl p-8 border border-white/20 shadow-2xl">
+        <button onclick="closePaymentModal()" aria-label="Close Modal" class="absolute top-6 right-6 p-2 rounded-full bg-white/10 text-white hover:text-gold-400 transition">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+        <div class="text-center">
+          <div class="w-14 h-14 rounded-2xl bg-gold-400/20 text-gold-400 flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="qr-code" class="w-7 h-7"></i>
+          </div>
+          <h3 class="text-xl font-bold font-display text-white">Direct Contribution Instructions</h3>
+          <p class="text-xs text-slate-300 mt-1">Donating <span id="modal-amount-display" class="font-bold text-gold-400">₹1,000</span> to Kalyani Charitable Trust</p>
+        </div>
+
+        <div class="mt-6 bg-midnight-900/90 p-5 rounded-2xl border border-white/10 text-xs space-y-3 font-mono">
+          <div class="flex justify-between border-b border-white/5 pb-2">
+            <span class="text-slate-400 font-sans">Beneficiary:</span>
+            <span class="text-white font-bold">Kalyani Charitable Trust</span>
+          </div>
+          <div class="flex justify-between border-b border-white/5 pb-2">
+            <span class="text-slate-400 font-sans">UPI ID:</span>
+            <span class="text-teal-300 font-bold">kalyanitrust@upi</span>
+          </div>
+          <div class="flex justify-between border-b border-white/5 pb-2">
+            <span class="text-slate-400 font-sans">Bank:</span>
+            <span class="text-white">State Bank of India</span>
+          </div>
+          <div class="flex justify-between">
+            <span class="text-slate-400 font-sans">Contact & Receipt:</span>
+            <span class="text-emeraldAccent-300 font-bold">8277754614</span>
+          </div>
+        </div>
+
+        <div class="mt-6 flex flex-col gap-3">
+          <a href="https://wa.me/918277754614?text=Hello%20Kalyani%20Charitable%20Trust%2C%20I%20have%20initiated%20a%20donation%20and%20would%20like%20an%2080G%20receipt." target="_blank" rel="noopener noreferrer" class="w-full py-3.5 rounded-xl bg-emeraldAccent-600 hover:bg-emeraldAccent-500 text-white font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-2 btn-3d">
+            <i data-lucide="message-circle" class="w-4 h-4"></i> Confirm via WhatsApp (8277754614)
+          </a>
+          <button onclick="closePaymentModal()" class="w-full py-2.5 rounded-xl bg-white/5 text-slate-400 hover:text-white text-xs font-semibold">
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==================== JAVASCRIPT ENGINE ==================== -->
+    <script>
+      /**
+       * KALYANI CHARITABLE TRUST — CENTRAL CONFIGURATION
+       * Centralized configuration for all organizational touchpoints.
+       */
+      const NGO_CONFIG = {
+        phone: "8277754614",
+        whatsapp: "918277754614",
+        email: "", // Editable variable: Set verified NGO email when available
+        facebook: "", // Editable variable
+        twitter: "", // Editable variable
+        instagram: "", // Editable variable
+        youtube: "", // Editable variable
+        googleMaps: "https://www.google.com/maps/place/Kalyani+Charitable+Trust/",
+        googleReviewsUrl: "https://www.google.com/maps/place/Kalyani+Charitable+Trust/@20.4514953,85.7589665,12z/data=!4m12!1m2!2m1!1sKALYANI+NAGAR+NGO+CUTTACK!3m8!1s0x3a190ded65b16ec5:0xddb560e22ac9af10!8m2!3d20.4514953!4d85.9031621!9m1!1b1!15sChlLQUxZQU5JIE5BR0FSIE5HTyBDVVRUQUNLkgEHY2hhcml0eeABAA!16s%2Fg%2F11v3j0t7v_?entry=ttu&g_ep=EgoyMDI2MDkyMy4wIKXMDSoASAFQAw%3D%3D",
+        googlePhotosUrl: "https://www.google.com/maps/place/Kalyani+Charitable+Trust/@20.4515228,85.9030899,3a,75y,90t/data=!3m8!1e2!3m6!1sCIABIhAGbzzgQAQnAmfDAGoACWh1!2e10!3e12!6shttps:%2F%2Flh3.googleusercontent.com%2Fgps-cs-s%2FANWiy9Qq973lt37AYgbwymOC5XnJ15t4wdZl4hXFJQ0w_Pi2L3rZlpCYGhRlHlLSaiSYIciuntx22fHdcsguIE93GnYPHAtoIqm7FRZAl8-mh1DJ885B0ra4kkjSUHrAX65WPPkHIaXc6fi08d0_%3Dw203-h152-k-no!7i1600!8i1200!4m11!1m2!2m1!1sKALYANI+NAGAR+NGO+CUTTACK!3m7!1s0x3a190ded65b16ec5:0xddb560e22ac9af10!8m2!3d20.4514953!4d85.9031621!10e5!15sChlLQUxZQU5JIE5BR0FSIE5HTyBDVVRUQUNLkgEHY2hhcml0eeABAA!16s%2Fg%2F11v3j0t7v_?entry=ttu&g_ep=EgoyMDI2MDkyMy4wIKXMDSoASAFQAw%3D%3D",
+        googleDirectionsUrl: "https://www.google.com/maps/dir//FW23%2BJ7P+Kalyani+Charitable+Trust,+Kalyani+Nagar,+Rajendra+Nagar,+Kataka,+Odisha+753013/@20.4514953,85.7589665,12z/data=!4m17!1m8!3m7!1s0x3a190ded65b16ec5:0xddb560e22ac9af10!2sKalyani+Charitable+Trust!8m2!3d20.4514953!4d85.9031621!15sChlLQUxZQU5JIE5BR0FSIE5HTyBDVVRUQUNLkgEHY2hhcml0eeABAA!16s%2Fg%2F11v3j0t7v_!4m7!1m0!1m5!1m1!1s0x3a190ded65b16ec5:0xddb560e22ac9af10!2m2!1d85.9031676!2d20.4514933?entry=ttu&g_ep=EgoyMDI2MDkyMy4wIKXMDSoASAFQAw%3D%3D"
+      };
+
+      // Set dynamic year
+      document.getElementById('current-year').textContent = new Date().getFullYear();
+
+      /* ==================== WEB AUDIO API PROCEDURAL SOUND SYNTH ==================== */
+      let soundEnabled = false;
+      let audioCtx = null;
+
+      function initAudio() {
+        if (!audioCtx) {
+          const AudioContext = window.AudioContext || window.webkitAudioContext;
+          if (AudioContext) audioCtx = new AudioContext();
+        }
+      }
+
+      function playSound(type) {
+        if (!soundEnabled) return;
+        try {
+          initAudio();
+          if (!audioCtx) return;
+          if (audioCtx.state === 'suspended') audioCtx.resume();
+
+          const now = audioCtx.currentTime;
+          const osc = audioCtx.createOscillator();
+          const gain = audioCtx.createGain();
+          osc.connect(gain);
+          gain.connect(audioCtx.destination);
+
+          if (type === 'click') {
+            osc.type = 'sine';
+            osc.frequency.setValueAtTime(580, now);
+            osc.frequency.exponentialRampToValueAtTime(880, now + 0.05);
+            gain.gain.setValueAtTime(0.06, now);
+            gain.gain.exponentialRampToValueAtTime(0.001, now + 0.05);
+            osc.start(now);
+            osc.stop(now + 0.05);
+          } else if (type === 'theme') {
+            osc.type = 'triangle';
+            osc.frequency.setValueAtTime(440, now);
+            osc.frequency.exponentialRampToValueAtTime(660, now + 0.12);
+            gain.gain.setValueAtTime(0.08, now);
+            gain.gain.exponentialRampToValueAtTime(0.001, now + 0.12);
+            osc.start(now);
+            osc.stop(now + 0.12);
+          } else if (type === 'success') {
+            osc.type = 'sine';
+            osc.frequency.setValueAtTime(523.25, now); // C5
+            osc.frequency.setValueAtTime(659.25, now + 0.08); // E5
+            gain.gain.setValueAtTime(0.08, now);
+            gain.gain.exponentialRampToValueAtTime(0.001, now + 0.25);
+            osc.start(now);
+            osc.stop(now + 0.25);
+          }
+        } catch (e) {
+          // Graceful fallback if audio is restricted
+        }
+      }
+
+      const soundToggleBtn = document.getElementById('sound-toggle');
+      const soundIcon = document.getElementById('sound-icon');
+      soundToggleBtn.addEventListener('click', () => {
+        soundEnabled = !soundEnabled;
+        if (soundEnabled) {
+          initAudio();
+          soundIcon.setAttribute('data-lucide', 'volume-2');
+          soundToggleBtn.classList.add('border-emeraldAccent-400', 'text-emeraldAccent-400');
+          playSound('click');
+        } else {
+          soundIcon.setAttribute('data-lucide', 'volume-x');
+          soundToggleBtn.classList.remove('border-emeraldAccent-400', 'text-emeraldAccent-400');
+        }
+        if (window.lucide) lucide.createIcons();
+      });
+
+      /* ==================== THEME TOGGLE (DARK & DAYLIGHT MODE) ==================== */
+      function toggleTheme() {
+        const html = document.documentElement;
+        const isDark = html.classList.contains('dark');
+        const themeIcon = document.getElementById('theme-icon');
+
+        if (isDark) {
+          html.classList.remove('dark');
+          localStorage.setItem('kct_theme', 'light');
+          document.body.classList.remove('bg-midnight-950', 'text-slate-100');
+          document.body.classList.add('bg-[#faf8f5]', 'text-slate-800');
+          themeIcon.setAttribute('data-lucide', 'moon');
+        } else {
+          html.classList.add('dark');
+          localStorage.setItem('kct_theme', 'dark');
+          document.body.classList.remove('bg-[#faf8f5]', 'text-slate-800');
+          document.body.classList.add('bg-midnight-950', 'text-slate-100');
+          themeIcon.setAttribute('data-lucide', 'sun');
+        }
+        playSound('theme');
+        if (window.lucide) lucide.createIcons();
+      }
+
+      // Check saved theme preference
+      if (localStorage.getItem('kct_theme') === 'light') {
+        toggleTheme();
+      }
+
+      /* ==================== MOBILE MENU ==================== */
+      function toggleMobileMenu() {
+        const menu = document.getElementById('mobile-menu');
+        const icon = document.getElementById('menu-icon');
+        menu.classList.toggle('hidden');
+        const isOpen = !menu.classList.contains('hidden');
+        icon.setAttribute('data-lucide', isOpen ? 'x' : 'menu');
+        if (window.lucide) lucide.createIcons();
+        playSound('click');
+      }
+
+      function closeMobileMenu() {
+        const menu = document.getElementById('mobile-menu');
+        const icon = document.getElementById('menu-icon');
+        menu.classList.add('hidden');
+        icon.setAttribute('data-lucide', 'menu');
+        if (window.lucide) lucide.createIcons();
+      }
+
+      /* ==================== PRELOADER SIMULATION ==================== */
+      window.addEventListener('load', () => {
+        const preloader = document.getElementById('preloader');
+        const bar = document.getElementById('preloader-bar');
+        const percent = document.getElementById('preloader-percent');
+        
+        let progress = 0;
+        const interval = setInterval(() => {
+          progress += Math.floor(Math.random() * 20) + 15;
+          if (progress >= 100) {
+            progress = 100;
+            clearInterval(interval);
+            bar.style.width = '100%';
+            percent.textContent = '100%';
+            setTimeout(() => {
+              preloader.classList.add('loaded');
+              triggerCounterAnimations();
+            }, 400);
+          } else {
+            bar.style.width = progress + '%';
+            percent.textContent = progress + '%';
+          }
+        }, 120);
+      });
+
+      /* ==================== HERO TAGLINE ROTATION ==================== */
+      const taglines = [
+        "TOGETHER, WE CREATE CHANGE.",
+        "COMPASSION INTO ACTION.",
+        "HOPE INTO OPPORTUNITY.",
+        "EVERY LIFE DESERVES A CHANCE.",
+        "SMALL ACTIONS. MEANINGFUL IMPACT.",
+        "BUILDING A BETTER TOMORROW, TOGETHER."
+      ];
+      let currentTaglineIndex = 0;
+      const taglineElement = document.getElementById('hero-tagline');
+
+      setInterval(() => {
+        if (!taglineElement) return;
+        taglineElement.style.opacity = '0';
+        taglineElement.style.transform = 'translateY(-10px) scale(0.98)';
+        
+        setTimeout(() => {
+          currentTaglineIndex = (currentTaglineIndex + 1) % taglines.length;
+          taglineElement.textContent = taglines[currentTaglineIndex];
+          taglineElement.style.opacity = '1';
+          taglineElement.style.transform = 'translateY(0px) scale(1)';
+        }, 500);
+      }, 4200);
+
+      /* ==================== IMPACT COUNTERS ==================== */
+      let countersTriggered = false;
+      function triggerCounterAnimations() {
+        if (countersTriggered) return;
+        countersTriggered = true;
+        const counters = document.querySelectorAll('.counter');
+        counters.forEach(counter => {
+          const target = +counter.getAttribute('data-target');
+          let current = 0;
+          const step = Math.ceil(target / 40);
+          const timer = setInterval(() => {
+            current += step;
+            if (current >= target) {
+              counter.textContent = target.toLocaleString() + '+';
+              clearInterval(timer);
+            } else {
+              counter.textContent = current.toLocaleString() + '+';
+            }
+          }, 35);
+        });
+      }
+
+      /* ==================== ATMOSPHERIC CANVAS PARTICLES ==================== */
+      (function initAmbientCanvas() {
+        const canvas = document.getElementById('ambient-canvas');
+        if (!canvas) return;
+        const ctx = canvas.getContext('2d');
+        let width = canvas.width = window.innerWidth;
+        let height = canvas.height = window.innerHeight;
+
+        window.addEventListener('resize', () => {
+          width = canvas.width = window.innerWidth;
+          height = canvas.height = window.innerHeight;
+        });
+
+        const particles = Array.from({ length: 32 }, () => ({
+          x: Math.random() * width,
+          y: Math.random() * height,
+          radius: Math.random() * 2 + 0.8,
+          vx: (Math.random() - 0.5) * 0.35,
+          vy: (Math.random() - 0.5) * 0.35,
+          color: Math.random() > 0.5 ? 'rgba(16, 185, 129, 0.4)' : 'rgba(214, 158, 46, 0.3)'
+        }));
+
+        function render() {
+          ctx.clearRect(0, 0, width, height);
+          particles.forEach(p => {
+            p.x += p.vx;
+            p.y += p.vy;
+            if (p.x < 0) p.x = width;
+            if (p.x > width) p.x = 0;
+            if (p.y < 0) p.y = height;
+            if (p.y > height) p.y = 0;
+
+            ctx.beginPath();
+            ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
+            ctx.fillStyle = p.color;
+            ctx.fill();
+          });
+          requestAnimationFrame(render);
+        }
+        render();
+      })();
+
+      /* ==================== 3D CYLINDRICAL GALLERY ENGINE ==================== */
+      const carousel = document.getElementById('cylindrical-carousel');
+      const dragArea = document.getElementById('gallery-drag-area');
+      const slides = Array.from(document.querySelectorAll('.gallery-slide'));
+      const numSlides = slides.length;
+      let currentRotation = 0;
+      let autoRotate = true;
+      const radius = 320; // 3D cylinder depth radius
+
+      function updateSlidePositions() {
+        slides.forEach((slide, idx) => {
+          const theta = (360 / numSlides) * idx + currentRotation;
+          slide.style.transform = `rotateY(${theta}deg) translateZ(${radius}px)`;
+        });
+      }
+      updateSlidePositions();
+
+      function rotateCarousel(dir) {
+        currentRotation += dir * (360 / numSlides);
+        updateSlidePositions();
+        playSound('click');
+      }
+
+      // Continuous Slow Rotation
+      setInterval(() => {
+        if (autoRotate) {
+          currentRotation -= 0.18;
+          updateSlidePositions();
+        }
+      }, 30);
+
+      // Drag / Swipe Interaction
+      let isDragging = false;
+      let startX = 0;
+      let previousX = 0;
+
+      dragArea.addEventListener('mouseenter', () => autoRotate = false);
+      dragArea.addEventListener('mouseleave', () => { autoRotate = true; isDragging = false; });
+
+      dragArea.addEventListener('mousedown', (e) => {
+        isDragging = true;
+        startX = e.clientX;
+        previousX = e.clientX;
+        autoRotate = false;
+      });
+
+      window.addEventListener('mousemove', (e) => {
+        if (!isDragging) return;
+        const deltaX = e.clientX - previousX;
+        currentRotation += deltaX * 0.35;
+        previousX = e.clientX;
+        updateSlidePositions();
+      });
+
+      window.addEventListener('mouseup', () => {
+        isDragging = false;
+      });
+
+      // Touch events for mobile
+      dragArea.addEventListener('touchstart', (e) => {
+        isDragging = true;
+        startX = e.touches[0].clientX;
+        previousX = e.touches[0].clientX;
+        autoRotate = false;
+      }, { passive: true });
+
+      dragArea.addEventListener('touchmove', (e) => {
+        if (!isDragging) return;
+        const deltaX = e.touches[0].clientX - previousX;
+        currentRotation += deltaX * 0.45;
+        previousX = e.touches[0].clientX;
+        updateSlidePositions();
+      }, { passive: true });
+
+      dragArea.addEventListener('touchend', () => {
+        isDragging = false;
+        autoRotate = true;
+      });
+
+      // Gallery Filter
+      function filterGallery(category, btn) {
+        document.querySelectorAll('.gallery-cat-btn').forEach(b => {
+          b.classList.remove('bg-emeraldAccent-500', 'text-white', 'shadow');
+          b.classList.add('bg-white/5', 'text-slate-300');
+        });
+        btn.classList.add('bg-emeraldAccent-500', 'text-white', 'shadow');
+        btn.classList.remove('bg-white/5', 'text-slate-300');
+
+        slides.forEach(slide => {
+          const cat = slide.getAttribute('data-category');
+          if (category === 'ALL' || cat === category) {
+            slide.style.opacity = '1';
+            slide.style.pointerEvents = 'auto';
+            slide.style.filter = 'none';
+          } else {
+            slide.style.opacity = '0.2';
+            slide.style.pointerEvents = 'none';
+            slide.style.filter = 'grayscale(80%)';
+          }
+        });
+        playSound('click');
+      }
+
+      /* ==================== DONATION CONTROLS ==================== */
+      let donationFrequency = 'one-time';
+      let selectedDonationAmount = 1000;
+
+      function setDonationFrequency(freq) {
+        donationFrequency = freq;
+        const btnOnce = document.getElementById('btn-freq-once');
+        const btnMonthly = document.getElementById('btn-freq-monthly');
+        if (freq === 'one-time') {
+          btnOnce.classList.add('bg-emeraldAccent-500', 'text-white', 'shadow-md');
+          btnOnce.classList.remove('text-slate-400');
+          btnMonthly.classList.remove('bg-emeraldAccent-500', 'text-white', 'shadow-md');
+          btnMonthly.classList.add('text-slate-400');
+        } else {
+          btnMonthly.classList.add('bg-emeraldAccent-500', 'text-white', 'shadow-md');
+          btnMonthly.classList.remove('text-slate-400');
+          btnOnce.classList.remove('bg-emeraldAccent-500', 'text-white', 'shadow-md');
+          btnOnce.classList.add('text-slate-400');
+        }
+        updateImpactExplanation();
+        playSound('click');
+      }
+
+      function selectAmount(val, btn) {
+        selectedDonationAmount = val;
+        document.getElementById('custom-amount').value = val;
+        document.querySelectorAll('.amount-btn').forEach(b => {
+          b.classList.remove('border-emeraldAccent-400', 'bg-emeraldAccent-500/20', 'text-emeraldAccent-300');
+          b.classList.add('border-white/10', 'bg-white/5', 'text-white');
+        });
+        btn.classList.add('border-emeraldAccent-400', 'bg-emeraldAccent-500/20', 'text-emeraldAccent-300');
+        btn.classList.remove('border-white/10', 'bg-white/5', 'text-white');
+        updateImpactExplanation();
+        playSound('click');
+      }
+
+      function onCustomAmountChange(val) {
+        selectedDonationAmount = parseInt(val) || 0;
+        document.querySelectorAll('.amount-btn').forEach(b => {
+          b.classList.remove('border-emeraldAccent-400', 'bg-emeraldAccent-500/20', 'text-emeraldAccent-300');
+          b.classList.add('border-white/10', 'bg-white/5', 'text-white');
+        });
+        updateImpactExplanation();
+      }
+
+      function updateImpactExplanation() {
+        const text = document.getElementById('donation-impact-text');
+        const cause = document.getElementById('cause-select').value;
+        const amt = selectedDonationAmount;
+
+        let desc = '';
+        if (cause === 'education') {
+          desc = `₹${amt.toLocaleString()} provides ${Math.max(1, Math.floor(amt / 500))} underprivileged students with complete school uniforms, notebooks, and learning toolkits.`;
+        } else if (cause === 'healthcare') {
+          desc = `₹${amt.toLocaleString()} funds essential preventive diagnostics, medicines, and eye examinations for ${Math.max(1, Math.floor(amt / 250))} community members.`;
+        } else if (cause === 'relief') {
+          desc = `₹${amt.toLocaleString()} delivers nutritious grocery kits and clean water purification tablets for ${Math.max(1, Math.floor(amt / 600))} vulnerable families.`;
+        } else if (cause === 'women') {
+          desc = `₹${amt.toLocaleString()} sponsors vocational materials and sewing equipment for ${Math.max(1, Math.floor(amt / 1500))} women striving for financial self-reliance.`;
+        } else {
+          desc = `₹${amt.toLocaleString()} is channeled directly where community relief and child welfare need it most urgently today across Cuttack.`;
+        }
+        text.textContent = (donationFrequency === 'monthly' ? '[Monthly Guardian] ' : '') + desc;
+      }
+
+      function openPaymentModal() {
+        const modal = document.getElementById('payment-modal');
+        document.getElementById('modal-amount-display').textContent = `₹${selectedDonationAmount.toLocaleString()} (${donationFrequency})`;
+        modal.classList.remove('hidden');
+        playSound('click');
+      }
+
+      function closePaymentModal() {
+        document.getElementById('payment-modal').classList.add('hidden');
+        playSound('click');
+      }
+
+      /* ==================== FORM SUBMISSIONS ==================== */
+      function handleVolunteerSubmit(e) {
+        e.preventDefault();
+        const form = document.getElementById('volunteer-form');
+        const success = document.getElementById('volunteer-success');
+        form.classList.add('opacity-50', 'pointer-events-none');
+        setTimeout(() => {
+          form.classList.add('hidden');
+          success.classList.remove('hidden');
+          playSound('success');
+        }, 600);
+      }
+
+      function handleContactSubmit(e) {
+        e.preventDefault();
+        const form = document.getElementById('contact-form');
+        const success = document.getElementById('contact-success');
+        form.classList.add('opacity-50', 'pointer-events-none');
+        setTimeout(() => {
+          form.classList.add('hidden');
+          success.classList.remove('hidden');
+          playSound('success');
+        }, 600);
+      }
+
+      function handleNewsletterSubmit(e) {
+        e.preventDefault();
+        document.getElementById('newsletter-success').classList.remove('hidden');
+        document.getElementById('news-email').value = '';
+        playSound('success');
+      }
+
+      /* ==================== FAQ ACCORDION ==================== */
+      function toggleFaq(num) {
+        const ans = document.getElementById(`faq-ans-${num}`);
+        const icon = document.getElementById(`faq-icon-${num}`);
+        const isHidden = ans.classList.contains('hidden');
+        
+        // Close others
+        for (let i = 1; i <= 5; i++) {
+          const a = document.getElementById(`faq-ans-${i}`);
+          const ic = document.getElementById(`faq-icon-${i}`);
+          if (a && ic) {
+            a.classList.add('hidden');
+            ic.classList.remove('rotate-180');
+          }
+        }
+
+        if (isHidden) {
+          ans.classList.remove('hidden');
+          icon.classList.add('rotate-180');
+        }
+        playSound('click');
+      }
+
+      /* ==================== MODALS & LIGHTBOX ==================== */
+      function openLightbox(src, caption) {
+        const modal = document.getElementById('lightbox-modal');
+        document.getElementById('lightbox-img').src = src;
+        document.getElementById('lightbox-caption').textContent = caption;
+        modal.classList.remove('hidden');
+        playSound('click');
+      }
+
+      function closeLightbox() {
+        document.getElementById('lightbox-modal').classList.add('hidden');
+        playSound('click');
+      }
+
+      function openProgrammeModal(type) {
+        const body = document.getElementById('detail-modal-body');
+        const data = {
+          education: {
+            title: "Education For Every Child",
+            img: "https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=800",
+            text: "Education is the greatest equalizer. Kalyani Charitable Trust identifies children at risk of dropping out due to poverty or family debt. We provide evening remedial coaching, textbooks, geometry boxes, uniforms, and encourage daily attendance through warm nutritional snacks."
+          },
+          healthcare: {
+            title: "Community Health & Medical Camps",
+            img: "https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?q=80&w=800",
+            text: "Preventive medicine saves lives before illnesses become catastrophic. We organize monthly camps in slum pockets and rural periphery clusters of Cuttack, with certified physicians offering free blood sugar tests, hypertension checks, free generic drugs, and cataract referrals."
+          },
+          women: {
+            title: "Women's Livelihood & Self-Help Skills",
+            img: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=800",
+            text: "Economic empowerment fosters generational dignity. We train women in artisan tailoring, food preservation, organic bag stitching, and digital banking so they can run micro-enterprises and ensure their daughters remain in school."
+          },
+          relief: {
+            title: "Food & Emergency Calamity Relief",
+            img: "https://images.unsplash.com/photo-1593113598332-cd288d649433?q=80&w=800",
+            text: "During cyclones, river inundation, and extreme weather in coastal Odisha, Kalyani Trust deploys emergency volunteer squads with high-protein food ration kits, halogen water purification tablets, and mosquito nets to affected settlements within hours."
+          },
+          elder: {
+            title: "Senior Citizen Care & Dignity",
+            img: "https://images.unsplash.com/photo-1516307365426-bea591f05011?q=80&w=800",
+            text: "Elderly destitute citizens face severe loneliness and chronic untreated ailments. We visit elderly residents weekly, providing regular prescription medicines, walking frames, warm winter blankets, and emotional companionship."
+          },
+          green: {
+            title: "Green Earth & Clean Water Initiative",
+            img: "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?q=80&w=800",
+            text: "Preserving local ecology for future generations. Our volunteers plant native neem, banyan, and fruit trees along river banks and school grounds while installing clean gravity-based drinking water filters in rural educational institutions."
+          }
+        };
+
+        const item = data[type] || data.education;
+        body.innerHTML = `
+          <div class="relative h-64 rounded-2xl overflow-hidden mb-6">
+            <img src="${item.img}" alt="${item.title}" class="w-full h-full object-cover" />
+            <div class="absolute inset-0 bg-gradient-to-t from-midnight-950 via-transparent to-transparent"></div>
+            <h3 class="absolute bottom-4 left-4 right-4 text-xl font-bold font-display text-white">${item.title}</h3>
+          </div>
+          <p class="text-sm text-slate-200 leading-relaxed">${item.text}</p>
+          <div class="mt-8 flex gap-3">
+            <a href="#donate" onclick="closeDetailModal()" class="flex-1 py-3 text-center rounded-xl bg-emeraldAccent-500 hover:bg-emeraldAccent-400 text-white font-bold text-xs uppercase tracking-wider btn-3d">
+              Sponsor This Programme
+            </a>
+            <a href="https://wa.me/918277754614?text=I%20want%20to%20know%20more%20about%20${encodeURIComponent(item.title)}" target="_blank" rel="noopener noreferrer" class="py-3 px-4 rounded-xl bg-white/10 hover:bg-white/20 text-white text-xs font-bold flex items-center justify-center">
+              Enquire on WhatsApp
+            </a>
+          </div>
+        `;
+        document.getElementById('detail-modal').classList.remove('hidden');
+        playSound('click');
+      }
+
+      function openStoryModal(id) {
+        const body = document.getElementById('detail-modal-body');
+        const data = {
+          priya: {
+            name: "Priya's Journey",
+            title: "From A Low-Income Settlement to Top of Her Class",
+            text: "Priya (13) lives with her parents in a modest shelter near Rajendra Nagar. Both parents work long hours in manual labor. Struggling with basic English and mathematics, Priya was on the verge of discontinuing her studies. When Kalyani Charitable Trust started free evening bridge coaching in her locality, our youth mentors spent individual time guiding her through difficult concepts. Within 8 months, Priya scored 88% in her term examinations. Today, she aims to become a school teacher to educate children from her own neighborhood."
+          },
+          sunita: {
+            name: "Sunita's Micro-Enterprise",
+            title: "Financial Autonomy Through Vocational Skill Training",
+            text: "Left with little financial security after a family emergency, Sunita joined our vocational tailoring program. Over 12 intensive weeks, she learned pattern drafting, stitching, and micro-business record keeping. Equipped with a sponsored sewing machine from a donor grant, Sunita now operates her own tailoring unit in Cuttack, stitching school uniforms and traditional clothing. Her daily earnings allow her to afford nutritious meals and medical care for her family."
+          },
+          ramesh: {
+            name: "Ramesh Babu",
+            title: "Restoring Clear Sight and Independent Mobility",
+            text: "At 72, Ramesh had been living in blur and darkness for nearly three years due to dense bilateral cataracts. Lacking family support, he had become confined to a corner of his small room. During our free mobile screening camp, volunteer doctors identified his condition. Kalyani Trust arranged for his transportation, diagnostic checks, and surgical restoration without a single rupee charged to him. Seeing his grandchildren clearly for the first time in years brought tears of joy to the entire community."
+          }
+        };
+
+        const item = data[id] || data.priya;
+        body.innerHTML = `
+          <div class="mb-4">
+            <span class="text-xs uppercase font-mono font-bold text-emeraldAccent-400">${item.name}</span>
+            <h3 class="text-xl font-bold font-display text-white mt-1">${item.title}</h3>
+          </div>
+          <p class="text-sm text-slate-200 leading-relaxed font-serif italic">${item.text}</p>
+          <div class="mt-8 pt-4 border-t border-white/10 flex justify-between items-center">
+            <span class="text-xs text-slate-400">Kalyani Charitable Trust Ground Chronicle</span>
+            <button onclick="closeDetailModal()" class="px-5 py-2.5 rounded-xl bg-white/10 hover:bg-white/20 text-xs font-bold text-white">Close</button>
+          </div>
+        `;
+        document.getElementById('detail-modal').classList.remove('hidden');
+        playSound('click');
+      }
+
+      function openResourceModal(id) {
+        const body = document.getElementById('detail-modal-body');
+        body.innerHTML = `
+          <h3 class="text-xl font-bold font-display text-white mb-2">Community Dispatch & Publication</h3>
+          <p class="text-xs text-slate-400 mb-4">Official publication document archive of Kalyani Charitable Trust.</p>
+          <p class="text-sm text-slate-200 leading-relaxed">
+            This research briefing documents grassroots field data collected during our on-ground surveys across Cuttack. Field assessments indicate that early community-level interventions drastically mitigate long-term systemic poverty.
+          </p>
+          <div class="mt-6 p-4 rounded-xl bg-emeraldAccent-500/10 border border-emeraldAccent-500/20 text-xs text-emeraldAccent-300">
+            For academic copies or formal research collaboration with Kalyani Charitable Trust, please connect with us via our official WhatsApp or phone line (+91 8277754614).
+          </div>
+          <div class="mt-6 flex justify-end">
+            <button onclick="closeDetailModal()" class="px-5 py-2 rounded-xl bg-white/10 hover:bg-white/20 text-xs font-bold text-white">Close</button>
+          </div>
+        `;
+        document.getElementById('detail-modal').classList.remove('hidden');
+        playSound('click');
+      }
+
+      function closeDetailModal() {
+        document.getElementById('detail-modal').classList.add('hidden');
+        playSound('click');
+      }
+
+      // Initialize Lucide Icons
+      document.addEventListener('DOMContentLoaded', () => {
+        if (window.lucide) {
+          lucide.createIcons();
+        }
+      });
+      // Safety check after window load
+      window.addEventListener('load', () => {
+        if (window.lucide) {
+          lucide.createIcons();
+        }
+      });
+    </script>
+
+  </main>
+</body>
+</html>

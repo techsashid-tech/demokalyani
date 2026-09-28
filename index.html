@@ -86,6 +86,14 @@
     }
   </script>
 
+  <!-- Pre-render Scroll Reset to Hero -->
+  <script>
+    if ('scrollRestoration' in history) {
+      history.scrollRestoration = 'manual';
+    }
+    window.scrollTo(0, 0);
+  </script>
+
   <!-- Structured Schema Data -->
   <script type="application/ld+json">
   {
@@ -272,7 +280,7 @@
     }
   </style>
 </head>
-<body class="bg-midnight-950 text-slate-100 font-sans antialiased selection:bg-emeraldAccent-500 selection:text-white">
+<body class="bg-midnight-950 text-slate-100 font-sans antialiased selection:bg-emeraldAccent-500 selection:text-white overflow-hidden">
 
   <!-- ==================== 3D PRELOADER ==================== -->
   <div id="preloader" class="fixed inset-0 z-[100] flex flex-col items-center justify-center bg-midnight-950 text-white">
@@ -414,7 +422,7 @@
         <div class="absolute bottom-1/4 right-1/4 w-80 h-80 bg-gold-400/10 rounded-full blur-[120px] pointer-events-none"></div>
       </div>
 
-      <div class="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-12 sm:pt-16">
+      <div id="hero-content-wrapper" class="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-12 sm:pt-16 transition-all duration-1000 ease-out transform">
         
         <!-- NGO Verification Badge with Subtle Light Pass -->
         <div class="inline-flex items-center gap-2.5 px-4 py-2 rounded-full glass-dark border border-emeraldAccent-400/30 text-emeraldAccent-300 text-xs font-semibold uppercase tracking-widest mb-6 light-sweep-container shadow-xl">
@@ -2223,11 +2231,24 @@
         if (window.lucide) lucide.createIcons();
       }
 
-      /* ==================== PRELOADER SIMULATION ==================== */
+      /* ==================== PRELOADER & HERO POSITION GUARANTEE ==================== */
+      function ensureHeroPosition() {
+        window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+        const homeSec = document.getElementById('home');
+        if (homeSec) {
+          homeSec.scrollIntoView({ behavior: 'instant', block: 'start' });
+        }
+      }
+
+      // Enforce hero position on immediate execution
+      ensureHeroPosition();
+
       window.addEventListener('load', () => {
+        ensureHeroPosition();
         const preloader = document.getElementById('preloader');
         const bar = document.getElementById('preloader-bar');
         const percent = document.getElementById('preloader-percent');
+        const heroContent = document.getElementById('hero-content-wrapper');
         
         let progress = 0;
         const interval = setInterval(() => {
@@ -2238,14 +2259,22 @@
             bar.style.width = '100%';
             percent.textContent = '100%';
             setTimeout(() => {
+              // Strictly ensure viewport is at Hero Section
+              ensureHeroPosition();
               preloader.classList.add('loaded');
+              document.body.classList.remove('overflow-hidden');
               triggerCounterAnimations();
-            }, 400);
+
+              if (heroContent) {
+                heroContent.style.opacity = '1';
+                heroContent.style.transform = 'translateY(0px)';
+              }
+            }, 350);
           } else {
             bar.style.width = progress + '%';
             percent.textContent = progress + '%';
           }
-        }, 120);
+        }, 90);
       });
 
       /* ==================== HERO TAGLINE ROTATION ==================== */
